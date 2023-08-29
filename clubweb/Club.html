@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--使用utf-8編譯-->
+		<meta charset="utf-8">
+		<!--網站設計者姓名-->
+		<meta name="author" content="呂允丞">
+		<!--最新版本-->
+		<meta name="revised" content="2021/4/8">
+		<!--提供搜尋引擎關鍵字-->
+		<meta name="keywords" content="中原大學,中原小社博,中原,社博,中原社博,">
+		<!--提供搜尋網站頁面描述-->
+		<meta name="description" content="帶領進入網站的客人了解中原大學的其中三個社團(跆拳道、向日社、弦樂社)，從中發現中原美好的社團生活進而行銷中原不錯的點與吸引學弟妹看到來就讀中原。">
+		<!--Font Awesome(Icon)-->
+		<script src="https://kit.fontawesome.com/c561b4bf8b.js" crossorigin="anonymous"></script>
+		<!--Starter template(新版)-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Starter template(舊版)-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Facebook、Line網址預覽設定-->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="中原小社博" />
+		<meta property="og:site_name" content="中原小社博" />
+		<meta property="og:description" content="....帶領進入網站的客人了解中原大學的其中三個社團(跆拳道、向日社、弦樂社)，從中發現中原美好的社團生活進而行銷中原不錯的點與吸引學弟妹看到來就讀中原。" />
+		<meta property="og:image" content="image url(https://i.imgur.com/4KhkkEZ.jpg)" />
+		<meta property="og:url" content="https://yunchenbluestar.github.io/YunChengTeam8/" />
+		<!--匯入Boostrap CSS(新版)-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!--匯入Boostrap CSS(舊版)-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!--外部引進CSS-->
+		<link rel="stylesheet" href="CSS/Club.css">
+		<!--外部引進JavaScript-->
+		<script src="JS/index.js"></script>
+        <!--思源黑體字型-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+		<!--匯入JQuery File(新版)-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+		<!--匯入JQuery File(舊版)-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--匯入圖片-->
+		<link rel="icon" href="Picture/LOGO-1.jpg" type="image/x-icon">
+    <title>中原小社博</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="index.html" id="headerPadding"><strong id="navInnerText">學校特色</strong></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html" target="_self" id="headerPadding"><strong>社團介紹</strong></a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+                                <strong id="navInnerText">社團介紹</strong>
+                            </a>
+                            <div class="dropdown-menu" id="ClubDropdown">
+                                <a class="dropdown-item CLUB_NAME" href="Club.html#intro"><strong>弦樂社</strong></a>
+                                <a class="dropdown-item CLUB_NAME" href="Club.html#Second"><strong>跆拳社</strong></a>
+                                <a class="dropdown-item CLUB_NAME" href="Club.html#Third"><strong>向日社</strong></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="index.html">
+                                <img src="Picture/LOGO-1.jpg" id="NavLogoImg">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Video.html" id="headerPadding"><strong id="navInnerText">影片介紹</strong></a>
+                        </li>		
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" id="headerPadding"><strong id="navInnerText">關於我們</strong></a>
+                        </li>
+                    </ul>				
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="row">
+            <div class="col-md-9 offset-md-2">
+                <div id="IntroTitleText">
+                    社團介紹：
+                </div>
+                <div class="col-md-9 offset-md-1 "id="clubTable">
+                    <p id="clubTableTitleText">給喜歡音樂的你:</p>
+                    <div id="computer">
+                        <div id="maincontent" data-bs-toggle="modal" data-bs-target="#envelopeModal1"><br>
+                          <div id="form-wrap"><img src="Picture/clubPicture/envelopStart2.png" id="beforeimg">
+                            <div id="envelope">
+                                <img src="Picture/clubPicture/envelopPicture.png" width="100%">
+                            </div><img id="afterimg" src="Picture/clubPicture/envelopEnd2.png">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal -->
+                    <div class="modal fade" id="envelopeModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content" id="envelopModalContent">
+                            <div >
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="envelopModalCloseBtn"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table id=Clubborder>
+                                    <tr>
+                                        <td>
+                                            <div style="height: 400px;">
+                                                <div id="Clubname">
+                                                    弦樂社
+                                                </div>
+                                                <div id="String">
+                                                    <img src="Picture/clubPicture/Stringlogo.jpg"  width="280px">
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 600px;">
+                                                <span id="Clubsummary">社團簡介</span>
+                                                <div id="ClubsummaryInner">
+                                                    <div id="StringIntroduction">
+                                                        <div id="StringLeft">
+                                                            <img src="Picture/clubPicture/String.jpg" width="450px" id="StringPNG">
+                                                        </div>
+                                                        <div id="StringRight">
+                                                            <p id="StringSociety">
+                                                                中原大學弦樂社於民國100年獨立於管弦樂社，由
+                                                                簡山根老師指導。為了讓喜愛弦樂、有興趣學習弦樂
+                                                                的同學能在校園中有相關管道接觸音樂而創社。利用
+                                                                課餘時間，舉辦社團活動、義演或成果發表會，以音
+                                                                樂做溝通，讓團員緊密的凝聚在一起，曾多次舉辦快
+                                                                閃活動以實際行動來關懷社會，用音樂散播全人能量
+                                                                至社會的各國角落。
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 900px;">
+                                                <span id="Clubsummary">社團活動</span>
+                                                <div id="clubActivityFirst">
+                                                    <div id="clubActivityLeft">
+                                                        <p id="Stringfairtext">        
+                                                            快閃演奏活動，透過此活動，增進大家的自信心及勇氣，讓自己多年的努力展現給大家，讓弦樂能夠出現再世界的各個角落，推廣弦樂的美好。
+                                                        </p>
+                                                    </div>
+                                                    <div id="clubActivityRight">
+                                                        <img src="Picture/clubPicture/StringFair.jpg"  id="StringFair">
+                                                    </div>
+                                                </div>
+                                                <div id="clubActivitySecond">
+                                                    <div id="clubActivityLeft2">
+                                                        <img src="Picture/clubPicture/Stringshow.jpg"  id="Stringshow"> 
+                                                    </div>
+                                                    <div id="clubActivityRight2">
+                                                        <p id="Stringashowtext">
+                                                            2020年的弦樂社成果發表，這次表演主要是純弦樂的形式，透過各種弦樂器的演奏，讓人們在悠揚的音樂中，放鬆疲憊的身心，而演奏者們也表現出這幾個月來，辛苦練習的成果。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <hr id="ClubHR">'
+                                            <div class="row" style="height: 180px;">
+                                                <div class="col-md-4 offset-md-3">
+                                                    <span id="ig">IG</span>
+                                                    <a href="https://instagram.com/cycu_strings?igshid=1n0cw6w26655d" target="blank"><img
+                                                            src="Picture/clubPicture/ig.png" id="igphoto"></a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span id="fb">FB</span><a href="https://www.facebook.com/CYCUString/" target="blank">
+                                                        <img src="Picture/clubPicture/facebook.png"  id="fbphoto"></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Second">
+        <div class="row">
+            <div class="col-md-9 offset-md-2">
+                <div class="col-md-9 offset-md-1 "id="clubTable">
+                    <p id="clubTableTitleText">給喜歡運動的你:</p>
+                    <div id="computer">
+                        <div id="maincontent" data-bs-toggle="modal" data-bs-target="#envelopeModal2"><br>
+                          <div id="form-wrap"><img src="Picture/clubPicture/envelopStart2.png" id="beforeimg">
+                            <div id="envelope">
+                                <img src="Picture/clubPicture/envelopPicture2.png" width="100%">
+                            </div><img id="afterimg" src="Picture/clubPicture/envelopEnd2.png">
+                          </div>
+                        </div>
+                      </div>
+                    
+                     <!-- Modal -->
+                     <div class="modal fade" id="envelopeModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content" id="envelopModalContent">
+                            <div >
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="envelopModalCloseBtn"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table id=Clubborder>
+                                    <tr>
+                                        <td>
+                                            <div style="height: 400px;">
+                                                <div id="Clubname">
+                                                    跆拳社
+                                                </div>
+                                                <div id="String">
+                                                    <img src="Picture/clubPicture/TKDlogo.jpg"  width="280px">
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 600px;">
+                                                <span id="Clubsummary">社團簡介</span>
+                                                <div id="ClubsummaryInner">
+                                                    <div id="StringIntroduction">
+                                                        <div id="StringLeft">
+                                                            <img src="Picture/clubPicture/TKD.jpg" width="450px" id="StringPNG">
+                                                        </div>
+                                                        <div id="StringRight">
+                                                            <p id="StringSociety">
+                                                                我們是一群熱愛跆拳道的熱血青年..... 
+                                                                不管你有沒有練過,在這社團沒有分你我.... 
+                                                                如果你有夢想,想運動...卻想展現自我.....
+                                                                跆拳道是您最好的選擇!!! 歡迎加入我們的大家庭~
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 900px;">
+                                                <span id="Clubsummary">社團活動</span>
+                                                <div id="clubActivityFirst">
+                                                    <div id="clubActivityLeft">
+                                                        <p id="Stringfairtext">        
+                                                            一年一度的社團博覽會，不但是跆拳社招收新生的重要
+                                                            活動，也是跆拳社展現精彩表演的時候，過程中展現了
+                                                            踢擊動作、防身術、手部動作，表演也讓社博增添了一
+                                                            片風采。
+                                                        </p>
+                                                    </div>
+                                                    <div id="clubActivityRight">
+                                                        <img src="Picture/clubPicture/TKDfair.JPG"  id="StringFair">
+                                                    </div>
+                                                </div>
+                                                <div id="clubActivitySecond">
+                                                    <div id="clubActivityLeft2">
+                                                        <img src="Picture/clubPicture/TKDshow.jpg"  id="Stringshow"> 
+                                                    </div>
+                                                    <div id="clubActivityRight2">
+                                                        <p id="Stringashowtext">
+                                                            大專盃是全國大學運動員夢寐以求的比賽，比分為
+                                                            品勢及對打，而能夠讓我們大展身手的地方就是透
+                                                            過大專盃這個比賽爭取榮譽，比賽就是最能展現團
+                                                            隊精神的時刻。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <hr id="ClubHR">'
+                                            <div class="row" style="height: 180px;">
+                                                <div class="col-md-4 offset-md-3">
+                                                    <span id="ig">IG</span>
+                                                    <a href="https://instagram.com/cytkd50?igshid=b8a1cvzgnyh3" target="blank"><img
+                                                            src="Picture/clubPicture/ig.png" id="igphoto"></a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span id="fb">FB</span><a href="https://www.facebook.com/cycutkd" target="blank">
+                                                        <img src="Picture/clubPicture/facebook.png"  id="fbphoto"></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Third">
+        <div class="row">
+            <div class="col-md-9 offset-md-2">
+             
+                <div class="col-md-9 offset-md-1 "id="clubTable">
+                    <p id="clubTableTitleText">給喜歡環保與蔬食的你:</p>
+                    <div id="computer">
+                        <div id="maincontent" data-bs-toggle="modal" data-bs-target="#envelopeModal3"><br>
+                          <div id="form-wrap"><img src="Picture/clubPicture/envelopStart2.png" id="beforeimg">
+                            <div id="envelope">
+                                <img src="Picture/clubPicture/envelopPicture3.png" width="100%">
+                            </div><img id="afterimg" src="Picture/clubPicture/envelopEnd2.png">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal -->
+                     <div class="modal fade" id="envelopeModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content" id="envelopModalContent">
+                            <div >
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="envelopModalCloseBtn"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table id=Clubborder>
+                                    <tr>
+                                        <td>
+                                            <div style="height: 400px;">
+                                                <div id="Clubname">
+                                                    向日社
+                                                </div>
+                                                <div id="String">
+                                                    <img src="Picture/clubPicture/sunlogo.jpg"  width="280px">
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 600px;">
+                                                <span id="Clubsummary">社團簡介</span>
+                                                <div id="ClubsummaryInner">
+                                                    <div id="StringIntroduction">
+                                                        <div id="StringLeft">
+                                                            <img src="Picture/clubPicture/sun.jpg" width="450px" id="StringPNG">
+                                                        </div>
+                                                        <div id="StringRight">
+                                                            <p id="StringSociety">
+                                                                向日社是一群推廣環保、淨塑、吃蔬食的熱血青年所經營的社團！
+                                                                在面對人際關係、課業壓力、生活瑣事是否讓你喘不過氣？無論是想分享生活中的大小事，
+                                                                或是想要找到夥伴一起實踐生活理念，歡迎大家來向日社走一走，和我們一起聊聊天、吃美味的蔬食餐點！
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr id="ClubHR">
+                                            <div style="height: 900px;">
+                                                <span id="Clubsummary">社團活動</span>
+                                                <div id="clubActivityFirst">
+                                                    <div id="clubActivityLeft">
+                                                        <p id="Stringfairtext">        
+                                                            教師節卡傳
+                                                            感恩的力量超乎你的imagin！！小~小的感恩，就能產
+                                                            生大~大的快樂，這份快樂不僅是彼此共有的，更能悄
+                                                            悄為這個世界增添莫大的正能量！再強硬的人，一旦接
+                                                            收到感恩，心也會變得柔軟，哪怕是一瞬間 ! 所以，
+                                                            請不要吝於表達感謝 !
+                                                        </p>
+                                                    </div>
+                                                    <div id="clubActivityRight">
+                                                        <img src="Picture/clubPicture/sunmon.jpg"  id="StringFair">
+                                                    </div>
+                                                </div>
+                                                <div id="clubActivitySecond">
+                                                    <div id="clubActivityLeft2" style="margin-left: -50%;">
+                                                        <img src="Picture/clubPicture/sunshow.jpg"  id="Stringshow"> 
+                                                    </div>
+                                                    <div id="clubActivityRight2">
+                                                        <p id="Stringashowtext">
+                                                            母親節卡傳
+                                                            當我們用感恩的眼睛向四方環顧，
+                                                            我們會發現：
+                                                            樹貢獻了它的綠蔭；
+                                                            花貢獻了它的芬芳。
+                                                            父母貢獻了他們的慈愛，
+                                                            而我自己要為這一切貢獻什麼呢？
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <hr id="ClubHR">'
+                                            <div class="row" style="height: 180px;">
+                                                <div class="col-md-4 offset-md-3">
+                                                    <span id="ig">IG</span>
+                                                    <a href="https://instagram.com/bwy_ty_cycu?igshid=1dxo6qwgmhtyo" target="blank"><img
+                                                            src="Picture/clubPicture/ig.png" id="igphoto"></a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span id="fb">FB</span><a href="https://www.facebook.com/bwytycycu/" target="blank">
+                                                        <img src="Picture/clubPicture/facebook.png"  id="fbphoto"></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row" id="FooterDetailRow">
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-map-marker-alt" id="FooterLocationIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://www.google.com.tw/maps/place/320%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%8C%97%E8%B7%AF200%E8%99%9F/@24.9575025,121.2383503,17z/data=!3m1!4b1!4m5!3m4!1s0x34682215ec48cb33:0x1bdd35564f192bca!8m2!3d24.9574977!4d121.240539" target="_blank">
+                                <p id="footerLocation">桃園市中壢區中北路200號</p>
+                            </a>
+                        </div>					
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="far fa-envelope" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="mailto:h1253567@gmail.com">
+                                <p id="footerLocation">h1253567@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-phone-alt" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="tel:+886-3-265-999">
+                                <p id="footerLocation">+886-3-265-9999</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-fax" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="#SectionRight" onclick="clickFax()">
+                                <p id="footerLocation">+886-3-265-8888</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <span id="SchoolLogo">CYCU</span>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://www1.cycu.edu.tw/" target="_blank">
+                                <p id="footerLocation">中原大學</p>
+                            </a>
+                        </div>	
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <span id="DepartmentLogo">CYIM</span>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://im.cycu.edu.tw/" target="_blank">
+                                <p id="footerLocation">中原大學資管系</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-right: 47px;">
+                <div class="col-md-12 text-center" >
+                    <div class="col-md-8 offset-md-2" id="CopyRightSeciotn">
+                        <small>
+                            <i class="far fa-copyright"></i> <span id="copyRightText">2021 CYIM Design: 第八組-中原小社博</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

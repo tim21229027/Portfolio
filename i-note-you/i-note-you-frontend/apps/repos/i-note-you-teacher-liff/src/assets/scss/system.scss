@@ -1,0 +1,49 @@
+.system_body {
+  margin-top: 50px !important;
+  display: flex;
+
+}
+
+.system_personal {
+
+  width: 90%;
+  border-radius: 10px;
+  border: 10px solid #170600;
+  float: left;
+}
+
+.system_personal_left {
+  background-color: #170600;
+  height: 700px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.system_personal_img {
+
+  margin-top: 40px;
+  border-radius: 100%;
+
+  height: 220px;
+  width: 220px;
+  overflow: hidden;
+
+}
+
+.system_personal_right {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  align-items: center;
+
+}
+
+.save_btn {
+  margin-top: 30px;
+  padding: 20px 30px 20px 30px;
+  border-radius: 5px;
+}

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="../assets/img/logo-1.png" type="image/x-icon">
+  <title>翰迪Handy Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/edition.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>Document</title>
+  <!--星星-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1356455_c5d3d3ohlbq.css">
+
+
+  <!--匯入Boostrap CSS(舊版)-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--匯入JQuery File(舊版)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <!--字體-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+  <!--彈出視窗-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <style type="text/css">
+    .item {
+      max-width: 85%;
+      padding: 1em;
+      background: #eee;
+      display: none;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    .item-close {
+      cursor: pointer;
+      right: 5px;
+      top: 5px;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 18px;
+      height: 26px;
+      line-height: 22px;
+      text-align: center;
+      width: 26px;
+    }
+
+    .container {
+      margin: 20px auto;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <!--彈出視窗-->
+
+</head>
+
+
+<body style="background-color: #FFF5EE;">
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="header-left">
+          <a class="nav-link" href="index.html">
+            <img src="../assets/img/logo.png" class="logo">
+          </a>
+
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+              <strong class="headertext">商品資訊</strong>
+            </a>
+            <div class="dropdown-menu" id="StoreDropdown">
+              <a class="dropdown-item" href="dressing.html" id="StoreName"><strong>化妝台</strong></a>
+              <a class=" dropdown-item" href="bar.html" id="StoreName"><strong>吧檯桌</strong></a>
+              <a class="dropdown-item" href="bed.html" id="StoreName"><strong>床邊桌</strong></a>
+              <a class="dropdown-item" href="office.html" id="StoreName"><strong>辦公桌</strong></a>
+              <a class="dropdown-item" href="dining.html" id="StoreName"><strong>餐桌</strong></a>
+              <a class="dropdown-item" href="side.html" id="StoreName"><strong>邊桌</strong></a>
+            </div>
+          </li>
+          <li class="headerlist">
+            <a class="nav-link" href="member.html" id="headerPadding">
+              <p class="headertext"> 會員中心 </p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="about.html" id="headerPadding">
+              <p class="headertext">關於我們</p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="QA.html" id="headerPadding">
+              <p class="headertext">Q&A</p>
+            </a>
+          </li>
+
+        </ul>
+        <div class="header-right">
+
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn2" href="#" id="headerlist2">登入</a>
+          </div>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn3" href="#" id="headerlist2">註冊</a>
+          </div>
+          <input type="search" class="search" placeholder="🔍Search" required>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn4" href="#"> <img src="../assets/img/cart.png" class="cartphoto"></a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section>
+    <!--登入-->
+    <div id="item1" class="item item--mod">
+      <div>
+        <h1>登入</h1>
+        <hr>
+      </div>
+      <form method='POST' action='#'>
+        <div>
+          <p class="SignInText">帳號:<input type="text" class="SignIn"></p>
+          <p class="SignInText">密碼:<input type="password" class="SignIn"></p>
+          <p><a href="#"><small class="SignInSmall">忘記密碼?</small></a></p>
+          <button type="submit" class="Signbtn">登入</button>
+        </div>
+      </form>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--登入-->
+    <!--註冊-->
+    <div id="item2" class="item item--mod">
+      <div>
+        <h1>註冊</h1>
+        <hr>
+        <form method='POST' action='#'>
+          <div>
+            <p class="SignInText">帳號:&emsp;&emsp;<input type="text" class="SignIn"></p>
+            <p class="SignInText">密碼:&emsp;&emsp;<input type="password" class="SignIn"></p>
+            <p class="SignInText">確認密碼:<input type="password" class="SignIn"></p>
+            <p class="SignInText">用戶名稱:<input type="text" class="SignIn"></p>
+            <p class="SignInText">電子郵件:<input type="email" class="SignIn"></p>
+            <p class="SignInText">電話號碼:<input type="text" class="SignIn"></p>
+            <button type="submit" class="Signbtn">註冊</button>
+          </div>
+        </form>
+      </div>
+
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--註冊-->
+    <!--購物車-->
+    <div id="item3" class="item item--mod">
+      <div class="cart">
+        <h2>購物車</h2>
+        <hr>
+
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:HEMNESB</p>
+            <p class="carttext">尺寸:110/45/134</p>
+            <p class="carttext">顏色:黑棕色</p>
+          </div>
+
+          <div class="cartQuantity">
+            <form id='myform' method='POST' action='#'>
+              <p class="carttext">數量:
+
+
+
+              </p>
+
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:1200$</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:</p>
+            <p class="carttext">尺寸:</p>
+            <p class="carttext">顏色:</p>
+          </div>
+
+          <div class="cartQuantity">
+            <form id='myform' method='POST' action='#'>
+              <p class="carttext">數量:
+
+
+
+              </p>
+            </form>
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <form method='POST' action='pay.html'>
+          <p><input type="checkbox" name="all" onclick="check_all(this,'c')" />全選/全不選<button
+              class="cartbtn2">刪除</button><span class="carttotal">總金額:</span><button type="submit"
+              class="cartbtn">去買單</button>
+          </p>
+        </form>
+      </div>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--購物車-->
+  </section>
+
+  <!--廣告-->
+  <section>
+    <div class="ccc">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+          <div class="slide first">
+            <img src="../assets/img/logo.png" alt="" style="width: 100%; height: 100%;">
+          </div>
+          <div class="slide">
+            <img src="../assets/img/ad1.jpg" alt="" style="width: 100%; height: 100%;">
+          </div>
+          <div class="slide">
+            <img src="../assets/img/aa2.jpg" alt="" style="width: 100%; height: 100%;">
+          </div>
+          <div class="slide">
+            <img src="../assets/img/a3.jpg" alt="" style="width:100%; height: 100%;">
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--廣告-->
+  <hr>
+  <!--熱門商品-->
+  <section>
+    <div class="hottitle">
+      <p class="hottitletext">熱門商品</p>
+    </div>
+    <div id="sitebody">
+      <div id="sidebar_left">
+        <p class="toptitle">🔥TOP1</p>
+        <div class="hot">
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn5" href="#hottitle"><img src="../assets/img/HEMNESB.jpg" class="hotimg"></a>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn5" href="#hottitle">
+              <p class="productName">HEMNESB</p>
+            </a>
+          </div>
+
+          <p class="productType">化妝台</p>
+          <p class="productType">評價:<span id="star6">★★★★★</span></p>
+          <p class="productPrice">$6,990</p>
+        </div>
+      </div>
+      <div id="sidebar_left2">
+        <p class="toptitle">🔥TOP2</p>
+        <div class="hot">
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn6" href="#hottitle"><img src="../assets/img/STENSELEB.jpg" class="hotimg2"></a>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn6" href="#hottitle">
+              <p class="productName">STENSELEB</p>
+            </a>
+          </div>
+
+          <p class="productType">吧檯桌</p>
+          <p class="productType">評價:<span id="star6">★★★★★</span></p>
+          <p class="productPrice">$3,290</p>
+        </div>
+      </div>
+      <div id="sidebar_right">
+        <p class="toptitle">🔥TOP3</p>
+        <div class="hot">
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn7" href="#hottitle"> <img src="../assets/img/TRYSILW.jpg" class="hotimg"></a>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn7" href="#hottitle">
+              <p class="productName">TRYSILW</p>
+            </a>
+          </div>
+
+          <p class="productType">床邊桌</p>
+          <p class="productType">評價:<span id="star6">★★★★☆</span></p>
+          <p class="productPrice">$1,290</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!--熱門商品-->
+  <section>
+    <!--商品-->
+
+    <div id="item4" class="item item--mod">
+      <div class="storediv">
+        <div class="derssingimgdiv">
+          <img src="../assets/img/HEMNESB.jpg" alt="" class="derssingimg">
+        </div>
+        <div class="dressinggoods">
+          <p class="dressingtext">商品名稱:HEMNESB</p>
+          <p class="dressingtext">價格:$3,290</p>
+          <p class="dressingtext">評價:<span id="star6">★★★★★</span></p>
+          <p class="dressingtext">庫存:</p>
+        </div>
+        <div class="dressingfirst">
+          <div class="dressingsee">
+            <p class="dressingtext">觀看次數:</p>
+          </div>
+          <div class="dressingQuantity">
+            <form id='myform' method='POST' action='#'>
+              <p class="carttext">
+                <input type='button' value='-' class='qtyminus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus' field='quantity' />
+              </p>
+            </form>
+          </div>
+          <div>
+            <button type="submit" class="dressingtbtn">加入購物車</button>
+          </div>
+        </div>
+        <div class="dressingsecond">
+          <h1>商品資訊</h1>
+          <hr>
+          <div class="Introduction">
+            <p class="Introductiontext">可提供更多空間，方便化妝和打理造型
+              可收納首飾和貼身衣物等物品
+              抽屜附止滑裝置，滑順好開。
+            </p>
+            <h3>類別:</h3>
+            <p>
+              化妝台
+            </p>
+            <h3>尺寸:</h3>
+            <p>寬/深/高:110/45/134cm</p>
+            <h3>顏色:黑棕色</h3>
+          </div>
+          <hr>
+        </div>
+        <b class="item-close js-popup-close">x</b>
+      </div>
+      <div class="dressingthird">
+        <h1>留言區</h1>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" hidden />
+          <label for="star5"></label>
+          <input type="radio" id="star4" name="rating" value="4" hidden />
+          <label for="star4"></label>
+          <input type="radio" id="star3" name="rating" value="3" hidden />
+          <label for="star3"></label>
+          <input type="radio" id="star2" name="rating" value="2" hidden />
+          <label for="star2"></label>
+          <input type="radio" id="star1" name="rating" value="1" hidden />
+          <label for="star1"></label>
+        </div>
+        <div class="comment"><input type="text" class="commenttext"><button type="submit" class="commentbtn">提交</button>
+        </div>
+      </div>
+
+      <div class="dressingfourth">
+        <h1>評論區</h1>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">王鮭魚<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">這桌子太讓人心動了
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">王小盟<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">剛好缺一個，好讚
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">李小心<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">這出貨速度我給五星好評
+          </div>
+
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!--商品2-->
+    <div id="item5" class="item item--mod">
+      <div class="storediv">
+        <div class="derssingimgdiv">
+          <img src="../assets/img/STENSELEB.jpg" alt="" class="derssingimg">
+        </div>
+        <div class="dressinggoods">
+          <p class="dressingtext">商品名稱:STENSELEB</p>
+          <p class="dressingtext">價格:$1,290</p>
+          <p class="dressingtext">評價:<span id="star6">★★★★★</span></p>
+          <p class="dressingtext">庫存:</p>
+        </div>
+        <div class="dressingfirst">
+          <div class="dressingsee">
+            <p class="dressingtext">觀看次數:</p>
+          </div>
+          <div class="dressingQuantity">
+            <form id='myform' method='POST' action='#'>
+              <p class="carttext">
+                <input type='button' value='-' class='qtyminus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus' field='quantity' />
+              </p>
+            </form>
+          </div>
+          <div>
+            <button type="submit" class="dressingtbtn">加入購物車</button>
+          </div>
+        </div>
+        <div class="dressingsecond">
+          <h1>商品資訊</h1>
+          <hr>
+          <div class="Introduction">
+
+            <p class="Introductiontext">
+              適合工作、用餐或會議使用；讓你倚靠、擺放椅子、到處移動，且耐撞、抗污，經久耐用；
+              簡約風格，適合放在任何地方 </p>
+
+            <h3>類別:</h3>
+            <p>
+              吧檯桌
+            </p>
+            <h3>尺寸:</h3>
+            <p>寬/高:70/105cm</p>
+            <h3>顏色:碳黑色</h3>
+          </div>
+          <hr>
+        </div>
+        <b class="item-close js-popup-close">x</b>
+      </div>
+      <div class="dressingthird">
+        <h1>留言區</h1>
+        <div class="rating">
+          <input type="radio" id="star11" name="rating" value="5" hidden />
+          <label for="star11"></label>
+          <input type="radio" id="star10" name="rating" value="4" hidden />
+          <label for="star10"></label>
+          <input type="radio" id="star9" name="rating" value="3" hidden />
+          <label for="star9"></label>
+          <input type="radio" id="star8" name="rating" value="2" hidden />
+          <label for="star8"></label>
+          <input type="radio" id="star7" name="rating" value="1" hidden />
+          <label for="star7"></label>
+        </div>
+        <div class="comment"><input type="text" class="commenttext"><button type="submit" class="commentbtn">提交</button>
+        </div>
+      </div>
+
+      <div class="dressingfourth">
+        <h1>評論區</h1>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">王金魚<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">心動不如行動
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">王小狗<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">很好用欸
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">李大目<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">愛了愛了
+          </div>
+
+        </div>
+        <hr>
+      </div>
+
+
+
+    </div>
+    <!--商品3-->
+    <div id="item6" class="item item--mod">
+      <div class="storediv">
+        <div class="derssingimgdiv">
+          <img src="../assets/img/TRYSILW.jpg" alt="" class="derssingimg">
+        </div>
+        <div class="dressinggoods">
+          <p class="dressingtext">商品名稱:TRYSILW</p>
+          <p class="dressingtext">價格:$1,290</p>
+          <p class="dressingtext">評價:<span id="star6">★★★★☆</span></p>
+          <p class="dressingtext">庫存:</p>
+        </div>
+        <div class="dressingfirst">
+          <div class="dressingsee">
+            <p class="dressingtext">觀看次數:</p>
+          </div>
+          <div class="dressingQuantity">
+            <form id='myform' method='POST' action='#'>
+              <p class="carttext">
+                <input type='button' value='-' class='qtyminus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus' field='quantity' />
+              </p>
+            </form>
+          </div>
+          <div>
+            <button type="submit" class="dressingtbtn">加入購物車</button>
+          </div>
+        </div>
+        <div class="dressingsecond">
+          <h1>商品資訊</h1>
+          <hr>
+          <div class="Introduction">
+
+            <p class="Introductiontext">
+              如果看書看累了，就把書放在層架上；抽屜可隱藏收納小物品，避免沾染灰塵；適合搭配TRYSIL系列其他家具 </p>
+
+            <h3>類別:</h3>
+            <p>
+              床邊桌
+            </p>
+            <h3>尺寸:</h3>
+            <p>寬/深/高:45/35/65cm</p>
+            <h3>顏色:白色/淺灰色</h3>
+          </div>
+          <hr>
+        </div>
+        <b class="item-close js-popup-close">x</b>
+      </div>
+      <div class="dressingthird">
+        <h1>留言區</h1>
+        <div class="rating">
+          <input type="radio" id="star16" name="rating" value="5" hidden />
+          <label for="star16"></label>
+          <input type="radio" id="star15" name="rating" value="4" hidden />
+          <label for="star15"></label>
+          <input type="radio" id="star14" name="rating" value="3" hidden />
+          <label for="star14"></label>
+          <input type="radio" id="star13" name="rating" value="2" hidden />
+          <label for="star13"></label>
+          <input type="radio" id="star12" name="rating" value="1" hidden />
+          <label for="star12"></label>
+        </div>
+        <div class="comment"><input type="text" class="commenttext"><button type="submit" class="commentbtn">提交</button>
+        </div>
+      </div>
+
+      <div class="dressingfourth">
+        <h1>評論區</h1>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">王賢魚<span id="star6">★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">我今天下單今天到
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">里小盟<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">酷東西
+          </div>
+
+        </div>
+        <hr>
+        <div class="commentdiv">
+          <div class="commentimgdiv">
+            <img src="../assets/img/logo-1.png" alt="" class="commentimg">
+          </div>
+          <div class="commentname">李小心<span id="star6">★★★★★</span></div>
+          <div class="commenttime">2020.6.10</div>
+          <div class="commentans">這出貨速度我給五星好評
+          </div>
+
+        </div>
+        <hr>
+      </div>
+
+
+
+    </div>
+    <!--商品-->
+  </section>
+  <footer>
+    <div class="footleft">
+      <p>©Handy Table(HT) 翰迪各式桌具販賣</p>
+    </div>
+    <div class="footright">
+      <p>購買須知消費者保護政策</p>
+    </div>
+  </footer>
+
+
+
+
+  <!--彈出視窗-->
+  <script>
+    (function ($) {
+      $(function () {
+        $('.btn2').on('click', function () {
+          $('#item1').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn3').on('click', function () {
+          $('#item2').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn4').on('click', function () {
+          $('#item3').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn5').on('click', function () {
+          $('#item4').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn6').on('click', function () {
+          $('#item5').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn7').on('click', function () {
+          $('#item6').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+  </script>
+
+  <script src="../assets/JQ/jquery.popup.min.js"></script>
+  <!--彈出視窗-->
+</body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167622866-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  $(function () {
+    // This button will increment the value
+    $('.qtyplus').click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If is not undefined
+      if (!isNaN(currentVal)) {
+        // Increment
+        $('input[name=' + fieldName + ']').val(currentVal + 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If it isn't undefined or its greater than 0
+      if (!isNaN(currentVal) && currentVal > 0) {
+        // Decrement one
+        $('input[name=' + fieldName + ']').val(currentVal - 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+  });
+
+
+  function check_all(obj, cName) {
+    var checkboxs = document.getElementsByName(cName);
+    for (var i = 0; i < checkboxs.length; i++) {
+      checkboxs[i].checked = obj.checked;
+    }
+  }
+</script>
+
+
+</html>

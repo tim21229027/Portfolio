@@ -1,0 +1,54 @@
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+
+  # 導向至 HTTPS
+  rewrite ^(.*) https://$host$1 permanent;
+}
+server {
+  # SSL 設定
+  listen 443 ssl default_server;
+  listen [::]:443 ssl default_server;
+  root /var/www/html/;
+  index hello.html;
+  server_name noteyou.ga;
+  ssl_certificate /etc/letsencrypt/live/www.noteyou.ga/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/www.noteyou.ga/privkey.pem;
+  # ...
+  location / {
+    proxy_pass http://localhost:3000/;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+  }
+}
+
+
+
+server {
+        # Listen port 號
+        listen       3000;
+        # Server name
+        server_name   noteyou.ga www.noteyou.ga
+        
+        # root 位置, 可以參考上面的 root 詳解
+        root   /home/ubuntu/i-note-you/i-note-you-frontend/packages/i-note-you-user-liff;
+        
+        # 預設檔案
+        index index.html index.htm;
+
+        location / {
+            # try to find $uri, and then $uri/, and if they both are not found, go for @router
+            try_files $uri $uri/ @router;
+            
+            # If the path is found, go for index file below
+            index  index.html index.htm;
+        }
+
+        location @router {
+            # rewite whatever to /index.html
+            
+            # 不管 request 是什麼, 都 rewrite 到 /index.html, 並且執行 last, last 代表說, 結束這一次的 rewrite 規則, 並且使用 rewrite 後的結果重新對 server 發一次請求
+            rewrite ^.*$ /index.html last;
+        }
+}

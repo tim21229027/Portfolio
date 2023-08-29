@@ -1,0 +1,69 @@
+.qatitle {
+    font-size: 40px;
+    font-family: 'Noto Serif TC',
+    serif;
+    position:relative;
+    left:40px;
+}
+
+.center{
+    margin-top: 50px;
+    width:70%;
+    position:relative;
+    top:56%;
+    left:50%;
+    transform: translate(-50%,-0%);
+    padding:20px;
+    background: #FFEBCD;
+    box-sizing: border-box;
+}
+
+#QandA .Question{ 
+width: 100%;
+border-bottom: 1px #aaa dotted;
+font-size: 20px;
+}
+#QandA .Answer{ 
+font-size: 20px;
+width: 100%;
+padding: 10px 0px;
+border-bottom: 1px #aaa dotted;
+}
+#QandA:hover{ 
+background: #ebf6f7;
+}
+
+.centertwo{
+    width:70%;
+    position:relative;
+    top:56%;
+    left:50%;
+    transform: translate(-50%,-2%);
+    padding:20px;
+    background: #FFEBCD;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.sendword{
+    font-size: 20px;
+    font-family: 'Noto Serif TC',
+    serif;
+}
+
+.send{
+    height: 220px;
+    width: 78%;
+    
+}
+
+.btn{
+    position: relative;
+    background-color: #DEB887;
+    border-radius: 10px;
+    border: white solid 1px;
+    width:80px;
+    height:35px;
+    top:87px;
+    left:50px;
+}

@@ -1,0 +1,578 @@
+@media screen and (max-width: 768px) {
+  .peopleImgBorder {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  .REvideo {
+    position: absolute;
+    left: 3%;
+    top: 350px;
+    z-index: 2;
+  }
+
+  .shareScreen {
+    position: absolute;
+    left: 3%;
+    top: 30px;
+    z-index: 2;
+
+  }
+
+  .wordCloud {
+    width: 300px;
+    height: 355px;
+    float: left;
+  }
+
+  .call {
+    margin-top: 30px;
+    height: 270px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .people {
+    border: 5px #170600 solid;
+    margin-top: 30px;
+    height: 270px;
+    border-radius: 10px;
+  }
+
+  .people_show {
+    height: 230px;
+  }
+
+  .people_mean {
+    height: 40px;
+    border-top: 5px #170600 solid;
+  }
+
+  .agora-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .agora-button {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .agora-video {
+    padding: 5%;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .REvideo {
+    position: absolute;
+    left: 4%;
+    top: 350px;
+    z-index: 2;
+  }
+
+  .shareScreen {
+    position: absolute;
+    left: 3%;
+    top: 30px;
+    z-index: 2;
+
+  }
+
+  .peopleImgBorder {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  .wordCloud {
+    width: 480px;
+    height: 355px;
+    float: left;
+  }
+
+  .call_btn {
+    margin-top: 350px;
+  }
+
+  .agora-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .agora-button {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .agora-video {
+    padding: 2%;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .call {
+    margin-top: 30px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+
+  .video {
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .people {
+    border: 5px #170600 solid;
+    margin-top: 30px;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .people_show {
+    height: 350px;
+  }
+
+  .people_mean {
+    height: 40px;
+    border-top: 5px #170600 solid;
+  }
+
+  .pepole_list {
+    max-height: 330px;
+  }
+
+  .messageInput {
+    position: absolute;
+    top: 310px;
+    left: 5%;
+    width: 90%
+  }
+
+  .people_count {
+    margin-top: 5px;
+    right: 5px;
+    text-align: right;
+  }
+
+  .peopleCountImg {
+    width: 20px;
+  }
+
+  .message_mean {
+    margin-top: 10px;
+    left: 10px;
+  }
+
+  .people_list2 {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: gray 1px 1px 3px 1px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .people_list3 {
+    margin: 10px;
+  }
+
+  .people_name {
+    top: -5px;
+    font-size: 8px;
+    margin-left: 3px;
+  }
+
+  .peopleImg {
+    width: 20px;
+  }
+
+  .peopleRightMic {
+    width: 15px !important;
+  }
+
+  .peopleRightHot {
+    width: 23px !important;
+    position: absolute;
+    z-index: 1;
+    left: -6.5px;
+  }
+
+  .user_messageName {
+    font-size: 10px;
+    top: -20px;
+    margin-left: 5px;
+  }
+
+  .people_messageName {
+    border: 3px #170600 solid;
+    border-radius: 5px;
+    left: 28px;
+    top: -10px;
+    padding: 5px;
+  }
+
+  .mic {
+    text-align: right;
+  }
+
+  .callIcon {
+    padding-top: 330px;
+  }
+
+  .callPhone {
+    text-align: right;
+    right: 30px;
+  }
+
+  .callMic {
+    left: 30px;
+  }
+
+  .keyword {
+    margin-top: 10px;
+    border: 5px #170600 solid;
+    height: 480px;
+    padding: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+
+  .keywordRank {
+    height: 60px;
+    box-shadow: 1px 1px 3px 1px gray;
+    width: 95%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 3px;
+  }
+
+  .keywordName {
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .keyword_list {
+    margin-top: 10px;
+    height: 420px;
+  }
+
+  .keywordProgress {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .peopleImgBorder {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  .REvideo {
+    position: absolute;
+    left: 3%;
+    top: 500px;
+    z-index: 3;
+  }
+
+  .shareScreen {
+    position: absolute;
+    left: 3%;
+    top: 30px;
+    z-index: 2;
+
+  }
+
+  .messageInput {
+    position: absolute;
+    top: 440px;
+    left: 5%;
+    width: 90%
+  }
+
+  .wordCloud {
+    width: 550px;
+    height: 355px;
+    float: left;
+  }
+
+  .call_btn {
+    margin-top: 480px;
+  }
+
+  .agora-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .agora-button {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .agora-video {
+
+    padding: 1%;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .call {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 550px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .video {
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    video::-webkit-media-controls-enclosure {
+      display: none;
+    }
+  }
+
+  .people {
+    border: 5px #170600 solid;
+    margin-top: 30px;
+    height: 550px;
+    border-radius: 10px;
+  }
+
+  .people_show {
+    height: 480px;
+  }
+
+  .people_mean {
+    height: 60px;
+    border-top: 5px #170600 solid;
+  }
+
+  .pepole_list {
+    max-height: 460px;
+  }
+
+  .people_count {
+    margin-top: 10px;
+    right: 10px;
+    text-align: right;
+  }
+
+  .message_mean {
+    margin-top: 10px;
+    left: 10px;
+  }
+
+  .people_list2 {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: gray 1px 1px 3px 1px;
+
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .peopleRightHot {
+    position: absolute;
+    width: 41px !important;
+    left: -8px;
+    z-index: 1;
+  }
+
+  .people_list3 {
+    margin: 10px;
+  }
+
+  .people_name {
+    top: -10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .user_messageName {
+    font-size: 10px;
+    top: -20px;
+    margin-left: 5px;
+  }
+
+  .people_messageName {
+    border: 3px #170600 solid;
+    border-radius: 5px;
+    right: 35px;
+    top: 10px;
+    padding: 5px;
+  }
+
+  .mic {
+    text-align: right;
+    top: 6px;
+  }
+
+  .callIcon {
+    padding-top: 470px;
+  }
+
+  .callPhone {
+    text-align: right;
+    right: 50px;
+  }
+
+  .callMic {
+    left: 50px;
+  }
+
+  .keyword {
+    margin-top: 10px;
+    border: 5px #170600 solid;
+    height: 480px;
+    padding: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+
+  .keywordRank {
+    height: 80px;
+    box-shadow: 1px 1px 3px 1px gray;
+    width: 95%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 3px;
+  }
+
+  .keywordName {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .keyword_list {
+    margin-top: 10px;
+    height: 420px;
+
+  }
+
+  .keywordProgress {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.box {
+  position: absolute;
+  margin-right: 2%;
+  margin-top: 10px;
+
+  text-align: right;
+  align-items: center;
+}
+
+.rect {
+
+  margin-left: 20px;
+  box-shadow: 3px 3px 3px 1px gray;
+  width: 50px;
+  height: 80px;
+
+  overflow: hidden;
+  background: #7edbf0;
+  border-radius: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #170600;
+}
+
+.rect text {
+  z-index: 2;
+  user-select: none;
+}
+
+.rect::before,
+.rect::after {
+  content: "";
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -300px;
+}
+
+.rect::before {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  animation: rotate 15s infinite;
+}
+
+.rect::after {
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 0.9);
+  animation: rotate 15s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    bottom: 40px;
+  }
+}
+
+.keywordBorder {
+
+  border-right: 5px solid #170600;
+  margin-top: 5px;
+}
+
+.keywordPlace {
+
+  display: flex;
+  justify-content: center;
+}
+
+.keywordCloud {
+  padding-top: 80px;
+}

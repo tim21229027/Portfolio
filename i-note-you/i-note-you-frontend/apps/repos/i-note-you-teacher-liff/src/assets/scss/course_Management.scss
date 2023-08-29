@@ -1,0 +1,138 @@
+.course_Manage {
+  margin-left: 30px;
+}
+
+.course_hearder {
+  margin-top: 20px;
+}
+
+.creatCourse_btn {
+  border-radius: 15px;
+  float: right;
+  top: 10px;
+  font-size: 20px;
+  padding: 22px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title_count {
+  font-size: 16px;
+  color: #969696;
+}
+
+.course {
+  margin-top: 30px;
+  height: 250px;
+  box-shadow: rgb(141, 141, 141) 3px 3px 3px 3px;
+  border-radius: 10px;
+  width: 240px;
+  display: inline-block;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  background-color: white;
+
+}
+
+.course:hover {
+
+  top: -2px;
+  background-color: #f0efef;
+}
+
+.course_col {
+  text-align: justify;
+
+
+}
+
+.course_imgBoredr {
+
+  position: relative;
+  height: 120px;
+  border-radius: 10px;
+  margin: 8%;
+  margin-bottom: 6%;
+  overflow: hidden;
+}
+
+.course_name {
+  margin-left: 8%;
+  font-size: 24px;
+  color: #170600;
+}
+
+.course_class {
+  margin-left: 8%;
+  font-size: 14px;
+  color: #969696;
+
+}
+
+.course_code_people {
+
+  margin-left: 8%;
+  font-size: 16px;
+  color: #170600;
+}
+
+.creatCourse_header {
+  padding: 10px;
+
+  color: #fff !important;
+
+}
+
+.n-card-header {
+
+  padding: 10px 10px 10px 25px !important;
+  background-color: #170600;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.n-card>.n-card-header .n-card-header__main {
+  color: #fff;
+
+}
+
+.n-card__content {
+  font-size: 16px !important;
+}
+
+.custom-card {
+  border-radius: 10px;
+
+}
+
+.n-base-close {
+  color: #fff;
+}
+
+.teacherBasic {
+  top: 23px;
+}
+
+.creatCourseC_btn {
+  border-radius: 5px;
+  float: right;
+  top: 10px;
+  font-size: 16px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 20px;
+}
+
+.invite {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.empty {
+
+  text-align: center;
+
+}

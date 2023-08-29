@@ -1,0 +1,81 @@
+.content {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+
+}
+
+.contain {
+  background-color: antiquewhite;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ordertrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  padding-right: 1rem;
+  font-size: 20px;
+  ;
+}
+
+h2 {
+  color: red;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.ordertrack div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.ooo {
+  width: 300px;
+  height: 100px;
+  background-color: burlywood;
+  color: green;
+  font-size: 40px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 1rem;
+}
+
+.nobtn {
+  width: 100px;
+  height: 50px;
+  background-color: burlywood;
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 1rem;
+}

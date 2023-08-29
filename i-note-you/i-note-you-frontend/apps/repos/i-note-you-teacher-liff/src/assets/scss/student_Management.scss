@@ -1,0 +1,72 @@
+.student_Management {
+  margin-left: 20px;
+}
+
+.student_list_border {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.student_list_header {
+  padding: 20px;
+  height: 80px;
+
+}
+
+.student_page_header_left {
+  float: left;
+
+}
+
+.student_page_header_right {
+  float: right;
+
+}
+
+.student_titleList {
+  margin-top: 20px;
+
+
+  height: 80px;
+
+  text-align: center;
+  background: #FFFFFF;
+  border: 0.5px solid #BBBBBB;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.student_titlelist_text {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  padding-top: 22px;
+  width: 20%;
+}
+
+.student_List {
+  margin-top: 10px;
+  background-color: #fff;
+
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px 1px 1px;
+
+}
+
+
+.student_list_text {
+  display: inline-block;
+  color: #170600;
+  font-size: 18px;
+  padding: 10px;
+  padding-top: 22px;
+  width: 20%;
+}

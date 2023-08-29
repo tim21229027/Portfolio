@@ -1,0 +1,63 @@
+.note_Management {
+  margin-left: 20px;
+}
+
+.noteBorder {
+  margin-top: 30px;
+  box-shadow: 1px 1px 3px 1px gray;
+  border-radius: 5px;
+}
+
+.NoteStudentList {
+  height: 800px;
+  border-right: 8px #170600 solid;
+}
+
+.NotestudentListOne {
+  padding-left: 15%;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.NotestudentListOne:hover {
+  background-color: #F0F0F0;
+
+}
+
+.NotestudentListName {
+  font-size: 16px;
+  margin-left: 15%;
+
+}
+
+.note_similar {
+  float: right;
+  width: 40%;
+  background-color: #170600;
+  color: white;
+  margin: 2%;
+  border-radius: 5px;
+
+  padding: 10px 5px 5px 5px;
+
+
+}
+
+.note_similar_rate {
+
+  float: right;
+}
+
+.note_similar_name {
+  top: -6px;
+  margin-left: 5px;
+}
+
+.notebook {
+  height: 660px;
+  box-shadow: 1px 1px 3px 1px gray;
+  width: 98%;
+  border-radius: 10px;
+  padding: 2%;
+}

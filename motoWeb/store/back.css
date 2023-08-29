@@ -1,0 +1,93 @@
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+.yayaya {
+  padding-top: 2rem;
+  width: 800px;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a:hover {
+  transform: scale(1.1);
+
+}
+
+.sss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.pro {
+  width: 500px;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: black;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  padding-top: 3rem;
+}
+
+.pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;
+
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 3rem;
+  border-radius: 1rem;
+  background-color: burlywood;
+  font-weight: bold;
+}

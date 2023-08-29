@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--使用utf-8編譯-->
+		<meta charset="utf-8">
+		<!--網站設計者姓名-->
+		<meta name="author" content="呂允丞">
+		<!--最新版本-->
+		<meta name="revised" content="2021/4/15">
+		<!--提供搜尋引擎關鍵字-->
+		<meta name="keywords" content="中原大學,中原小社博,中原,社博,中原社博,">
+		<!--提供搜尋網站頁面描述-->
+		<meta name="description" content="帶領進入網站的客人了解中原大學的其中三個社團(跆拳道、向日社、弦樂社)，從中發現中原美好的社團生活進而行銷中原不錯的點與吸引學弟妹看到來就讀中原。">
+		<!--Font Awesome(Icon)-->
+		<script src="https://kit.fontawesome.com/c561b4bf8b.js" crossorigin="anonymous"></script>
+		<!--Starter template(新版)-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Starter template(舊版)-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Facebook、Line網址預覽設定-->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="中原小社博" />
+		<meta property="og:site_name" content="中原小社博" />
+		<meta property="og:description" content="....帶領進入網站的客人了解中原大學的其中三個社團(跆拳道、向日社、弦樂社)，從中發現中原美好的社團生活進而行銷中原不錯的點與吸引學弟妹看到來就讀中原。" />
+		<meta property="og:image" content="image url(https://i.imgur.com/4KhkkEZ.jpg)" />
+		<meta property="og:url" content="https://yunchenbluestar.github.io/YunChengTeam8/" />
+		<!--匯入Boostrap CSS(新版)-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!--匯入Boostrap CSS(舊版)-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!--外部引進CSS-->
+		<link rel="stylesheet" href="CSS/index.css">
+		<!--外部引進JavaScript-->
+		<script src="JS/index.js"></script>
+        <!--思源黑體字型-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <!--引入Boostrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<!--引入Boostrap Bundle-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <!--引入Boostrap Separate-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <!--匯入JQuery File(新版)-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+		<!--匯入JQuery File(舊版)-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--匯入圖片-->
+		<link rel="icon" href="Picture/LOGO-1.jpg" type="image/x-icon">
+    <title>中原小社博</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="index.html" id="headerPadding"><strong id="navInnerText">學校特色</strong></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html" target="_self" id="headerPadding"><strong>社團介紹</strong></a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+                                <strong id="navInnerText">社團介紹</strong>
+                            </a>
+                            <div class="dropdown-menu" id="ClubDropdown">
+                                <a class="dropdown-item" href="Club.html#intro" id="CLUB_NAME"><strong>弦樂社</strong></a>
+                                <a class="dropdown-item" href="Club.html#Second" id="CLUB_NAME"><strong>跆拳社</strong></a>
+                                <a class="dropdown-item" href="Club.html#Third" id="CLUB_NAME"><strong>向日社</strong></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="index.html">
+                                <img src="Picture/LOGO-1.jpg" id="NavLogoImg">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Video.html" id="headerPadding"><strong id="navInnerText">影片介紹</strong></a>
+                        </li>		
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" id="headerPadding"><strong id="navInnerText">關於我們</strong></a>
+                        </li>
+                    </ul>				
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="circleBtn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="circleBtn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" id="circleBtn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" id="circleBtn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" id="circleBtn"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Picture/indexPicture/中原大學美照1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Picture/indexPicture/中原大學美照5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Picture/indexPicture/中原大學美照3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Picture/indexPicture/中原大學美照2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Picture/indexPicture/中原大學美照4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="second">
+        <div class="container-fluid">
+            <div class="row" id="processCircleRow">
+                <div class="col-md-3">
+                    <div id="processCircleTop">
+                        <h1>註冊率</h1>
+                    </div>
+                    <div class="progress-circle progress-99"><span>「100%」</span></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="processCircleTop">
+                        <h1>私校就業率</h1>
+                    </div>
+                    <div class="progress-circle progress-99"><span>「第一名」</span></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="processCircleTop">
+                        <h1>2019遠見雜誌評比</h1>
+                    </div>
+                    <div class="progress-circle progress-99"><span>「企業最愛」</span></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="processCircleTop">
+                        <h1>「CWUR」評比</h1>
+                    </div>
+                    <div class="progress-circle progress-99"><span>「第一名」</span></div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section id="third">
+        <div id="cycuTeachTitle">「 中原大學，全人教育 」</div>
+        <div id="cycuBox">
+            <div id="left-top">
+                <img src="Picture/indexPicture/天.png" id="left-top_img" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop1" aria-controls="offcanvasWithBackdrop">
+            </div>
+            <div id="left-bottom">
+                <img src="Picture/indexPicture/人.png" id="right-top_img"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop2" aria-controls="offcanvasWithBackdrop">
+            </div>
+            <div id="right-top">
+                <img src="Picture/indexPicture/物.png" id="left-bottom_img"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop3" aria-controls="offcanvasWithBackdrop">
+            </div>
+            <div id="right-bottom">
+                <img src="Picture/indexPicture/我.png" id="right-bottom_img"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop4" aria-controls="offcanvasWithBackdrop">
+            </div>
+            <img src="Picture/indexPicture/直角坐標.png" id="CartesianImg">
+        </div>
+        <!-- offcanvas1 -->
+        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasWithBackdrop1">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasCloseBtn"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="offcanvas-title" id="innerTitle">「 天 」</h5>
+                <img id="innerImg" src="Picture/indexPicture/sky.png">
+                <p id="innerText">天，在探討生命的意義與價值判斷的形上思考。我們著重於宗教信仰、靈性關懷、生命意義與價值判斷等基本素養。例如宗教哲學、人生哲學、價值判斷與分析、生命與品格典範等相關課程。</p>
+            </div>
+        </div>
+        <!-- offcanvas2 -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop2">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasCloseBtn"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="offcanvas-title" id="innerTitle">「 人 」</h5>
+                <img id="innerImg2" src="Picture/indexPicture/people.png">
+                <p id="innerText">所謂「人」是指活在屬於人的各種關係價值之中，而不是一個完全離群索居的「人」。
+                    依社會學的意義而言，甚難將這種離群索居的人稱之為「人」。
+                    當今所謂的現代人，常極力否定人與其他事物之關係，在他們的心目中，認為任何關係都是一種束縛，都是對個人自由的斲傷。
+                    這種思想產生了否定一切的心態，拒絕權威，拒絕真理，完全以個體自由為標準。
+                    然而事實上，人是有限的，人是不足的，作為一個勇敢的人，必須面對自己的一切，知道自己有限、不足，有「是什麼就是什麼」的勇氣，才有更求上進的意志，田立克 (Paul Tillich) 
+                    所謂「courage to be」，正是此意。 
+                </p>
+            </div>
+          </div>
+        <!-- offcanvas3 -->
+        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasWithBackdrop3">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasCloseBtn"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="offcanvas-title" id="innerTitle">「 物 」</h5>
+                <img id="innerImg3" src="Picture/indexPicture/object.png">
+                <p id="innerText">天生萬物必有我用，人與物的關係應是一種「共生」的關係，人利用各種技術和物質以改善生活的環境，促進人類的幸福。所謂「人」為萬「物」之靈，此之謂也。但是，不幸的是今天的人已為「物」所役，甚至與「物」相對峙，人的主體性完全喪失，今天的世界似乎已是追求「物」為萬「人」之靈的世界，此為何等悲哀之事。 
+                </p>
+            </div>
+        </div>
+        <!-- offcanvas4 -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop4">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasCloseBtn"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="offcanvas-title" id="innerTitle">「 我 」</h5>
+                <img id="innerImg" src="Picture/indexPicture/myself.png">
+                <p id="innerText">「我」是獨特的 (unique)，生命是不可取代的。然而人生在世也絕對不可能完全孑然獨存，不受任何人之影響，做一個「人」必須有勇氣面對自己的有限、軟弱與無能，如此，方能繼續努力、發揮潛能，盡一己之力以完成個體存在之意義。
+                    </p>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row" id="FooterDetailRow">
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-map-marker-alt" id="FooterLocationIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://www.google.com.tw/maps/place/320%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%8C%97%E8%B7%AF200%E8%99%9F/@24.9575025,121.2383503,17z/data=!3m1!4b1!4m5!3m4!1s0x34682215ec48cb33:0x1bdd35564f192bca!8m2!3d24.9574977!4d121.240539" target="_blank">
+                                <p id="footerLocation">桃園市中壢區中北路200號</p>
+                            </a>
+                        </div>					
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="far fa-envelope" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="mailto:h1253567@gmail.com">
+                                <p id="footerLocation">h1253567@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-phone-alt" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="tel:+886-3-265-999">
+                                <p id="footerLocation">+886-3-265-9999</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <i class="fas fa-fax" id="FooterIcon"></i>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="#SectionRight" onclick="clickFax()">
+                                <p id="footerLocation">+886-3-265-8888</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <span id="SchoolLogo">CYCU</span>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://www1.cycu.edu.tw/" target="_blank">
+                                <p id="footerLocation">中原大學</p>
+                            </a>
+                        </div>	
+                    </div>
+                    <div id="footerSection">
+                        <div id="SectionLeft">
+                            <span id="DepartmentLogo">CYIM</span>
+                        </div>
+                        <div id="SectionRight" >
+                            <a id="footerSectionTagA" href="https://im.cycu.edu.tw/" target="_blank">
+                                <p id="footerLocation">中原大學資管系</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-right: 47px;">
+                <div class="col-md-12 text-center" >
+                    <div class="col-md-8 offset-md-2" id="CopyRightSeciotn">
+                        <small>
+                            <i class="far fa-copyright"></i> <span id="copyRightText">2021 CYIM Design: 第八組-中原小社博</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

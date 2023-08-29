@@ -1,0 +1,116 @@
+.title {
+  padding-left: 50px;
+  padding-top: 40px;
+  font-size: 40px;
+
+}
+
+
+.abouttextdiv {
+  height: 300px;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 25px;
+}
+
+.presonal {
+
+  float: left;
+  width: 25%;
+  height: 600px;
+  border-left: #F5E9CC 5px solid;
+
+}
+
+.presonaldiv {
+  height: 100%;
+
+  margin-top: 50px;
+}
+
+.flip {
+
+  width: 50%;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.panel {
+  width: 50%;
+  margin: auto;
+  padding: 2px;
+  display: none;
+
+
+}
+
+.flip2 {
+
+  width: 50%;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.panel2 {
+  width: 50%;
+  margin: auto;
+  padding: 2px;
+  display: none;
+}
+
+.flip3 {
+
+  width: 47%;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.panel3 {
+  width: 60%;
+  margin: auto;
+  padding: 2px;
+  display: none;
+}
+
+.flip4 {
+
+  width: 47%;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.panel4 {
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  display: none;
+}
+
+.personalphoto {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.ig {
+  width: 50px;
+  position: relative;
+  left: 45%;
+
+
+}

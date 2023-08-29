@@ -1,0 +1,101 @@
+.root{
+  background-image: url("home/cloud2.png");
+	background-size: cover, 100%;
+}
+
+.member-form1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-form2{
+  display: flex;
+  justify-content:right;
+  align-items: center;
+
+}
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form hr{
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  color: black;
+  background: black;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+.form {
+  background-color: #FFEEDB;
+  border: 10px bold black;
+  margin: 10% 30%;
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
+
+
+.form-check-label {
+  margin-right: 60%;
+}
+
+.btn {
+  margin-left: 40%;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #ED9B40;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btn:hover {
+  background-color: #BB0A21;
+  border: 1px solid white;
+
+}
+
+.btn:active {
+  background-color: #BB0A21;
+  border: 1px solid white;
+  outline: none;
+}
+.form-group {
+  font-size: 35px;
+  line-height: 250%;
+}
+
+form {
+  padding: 6%;
+}
+
+.btn {
+  margin-left: 38%;
+}
+
+.aside {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  float: left;
+  position: fixed;
+  top: 25%;
+  font-size: 40px;
+  line-height: 65px;
+
+}
+.member-form2 p {
+  border-bottom-style: solid;
+}

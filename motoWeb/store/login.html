@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentUMoto好騎一直騎</title>
+
+</head>
+<style>
+  @import url(login.css);
+  @import url(headfoot.css);
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+</style>
+
+<body>
+
+  <header>
+    <div>
+      <div class="option">
+        <div>
+          <a href="index.jsp"> <img class="logo" src="home/logo.png"></a>
+        </div>
+        <div class="box">
+          <div class="seen">
+            <span class="icon"><i class="fa fa-search">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+              </i></span>
+            <input type="search" id="search" placeholder="Search">
+          </div>
+        </div>
+        <div class="drop">
+
+          <ul class="dropdown">
+            <p> 商品分類</p>
+            <li><a href="honda2.jsp">Honda</a></li>
+            <li><a href="yamaha2.jsp">Yamaha</a></li>
+            <li><a href="suzuki2.jsp">Suzuki</a></li>
+
+          </ul>
+          <ul class="dropdown">
+            <p>客服中心</p>
+            <li><a href="qa.jsp">常見Q&A</a></li>
+          </ul>
+          <ul class="dropdown">
+            <p>關於我們</p>
+            <li><a href="about.jsp">我們的小故事</a></li>
+          </ul>
+          <a href="login.html">
+            <p>註冊/登入</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="people">
+    &emsp;
+  </div>
+  <div class="content">
+    <h2>與RentUMoto一起實現夢想的第一步!</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form name="user" method="POST" action="add.jsp">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <input type="text" placeholder="Name" required="required" name="id"/>
+          <input type="email" placeholder="Email" id="email"required="required" name="email"/>
+          <input type="password" placeholder="Password" required="required"name="pwd"/>
+           <button>Sing UP</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in-container">
+        <form method="POST" action="check.jsp">
+          <h1>Sign in</h1>
+          <input type="email" placeholder="Email"required="required"  name="email"/>
+          <input type="password" placeholder="Password" required="required" name="pwd"/>
+          <a href="#">
+            <h4>Forgot your password?</h4>
+          </a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+
+          <div class="overlay-panel overlay-left">
+            <div class="back"> <img class="bgg" src="home/bg.jpg"></div>
+            <h1>Welcome Back!</h1>
+            <p></p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <div class="back"> <img class="bgg" src="home/bgg.jpg"></div>
+            <h1>Welcome!!</h1>
+            <p></p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="foot">
+      <h5>Copyright: RentUMoto 好騎一直騎</h5>
+      <h5>服務時間:周一至周日 A.M 8:00~P.M 6:00</h5>
+      <h5>電話:(03)38123456</h5>
+      <h5>地址:32023 桃園市中壢區中北路2OO號</h5>
+      <h5>E-mail:rentumoto@gmail.com</h5>
+    </div>
+
+  </footer>
+  <script>
+    const signUpButton = document.getElementById ('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
+</body>
+
+</html>

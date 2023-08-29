@@ -1,0 +1,85 @@
+.teaching_Data {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.studentsOnClass {
+  margin-top: 30px;
+  box-shadow: gray 1px 1px 3px 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.studentsOnClassText {
+  font-size: 32px;
+  top: -110px;
+  color: #170600;
+}
+
+.studentsOnClassTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+.teachSu {
+  text-align: center;
+}
+
+.studentsOnClassSecondTitle {
+  text-align: right;
+}
+
+.studentsHotText {
+  font-size: 48px;
+  top: -150px;
+  color: #170600;
+}
+
+.studentsAvgText {
+  font-size: 24px;
+  top: -60px;
+  color: #170600;
+}
+
+.studentsAvgSecondTitle {
+  text-align: center;
+
+}
+
+.studentsOnClassData {
+  margin-left: 50px;
+  display: inline-block;
+  border: 1px gray solid;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 45px;
+  margin-right: 50px;
+  width: 80%;
+  top: -20px;
+  border-radius: 10px;
+}
+
+.studentsOnClassDataBorder {
+
+  text-align: left;
+}
+
+.dataCount {
+  margin-right: 10px;
+  top: 40px;
+  text-align: right;
+}
+
+.dataTitle {
+  margin-left: 80px;
+  top: -10px;
+  font-size: 16px;
+
+}
+
+.dataTitleText {
+  padding: 3px 15px 3px 15px;
+  background-color: #F9F9F9;
+  z-index: 1;
+}

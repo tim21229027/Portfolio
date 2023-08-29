@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="../assets/img/logo-1.png" type="image/x-icon">
+  <title>翰迪Handy Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/edition.css">
+  <link rel="stylesheet" href="../assets/css/member.css">
+  <title>Document</title>
+  <!--匯入Boostrap CSS(舊版)-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--匯入JQuery File(舊版)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <!--字體-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+  <!--彈出視窗-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <style type="text/css">
+    .item {
+      max-width: 85%;
+      padding: 1em;
+      background: #eee;
+      display: none;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    .item-close {
+      cursor: pointer;
+      right: 5px;
+      top: 5px;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 18px;
+      height: 26px;
+      line-height: 22px;
+      text-align: center;
+      width: 26px;
+    }
+
+    .container {
+      margin: 20px auto;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <!--彈出視窗-->
+</head>
+
+
+<body style="background-color: #FFF5EE;">
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="header-left">
+          <a class="nav-link" href="index.html">
+            <img src="../assets/img/logo.png" class="logo">
+          </a>
+
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+              <strong class="headertext">商品資訊</strong>
+            </a>
+            <div class="dropdown-menu" id="StoreDropdown">
+              <a class="dropdown-item" href="dressing.html" id="StoreName"><strong>化妝台</strong></a>
+              <a class=" dropdown-item" href="bar.html" id="StoreName"><strong>吧檯桌</strong></a>
+              <a class="dropdown-item" href="bed.html" id="StoreName"><strong>床邊桌</strong></a>
+              <a class="dropdown-item" href="office.html" id="StoreName"><strong>辦公桌</strong></a>
+              <a class="dropdown-item" href="dining.html" id="StoreName"><strong>餐桌</strong></a>
+              <a class="dropdown-item" href="side.html" id="StoreName"><strong>邊桌</strong></a>
+            </div>
+          </li>
+          <li class="headerlist">
+            <a class="nav-link" href="member.html" id="headerPadding">
+              <p class="headertext"> 會員中心 </p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="about.html" id="headerPadding">
+              <p class="headertext">關於我們</p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="QA.html" id="headerPadding">
+              <p class="headertext">Q&A</p>
+            </a>
+          </li>
+
+        </ul>
+        <div class="header-right">
+
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn2" href="#" id="headerlist2">登入</a>
+          </div>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn3" href="#" id="headerlist2">註冊</a>
+          </div>
+          <input type="search" class="search" placeholder="🔍Search" required>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn4" href="#"> <img src="../assets/img/cart.png" class="cartphoto"></a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section>
+    <!--登入-->
+    <div id="item1" class="item item--mod">
+      <div>
+        <h1>登入</h1>
+        <hr>
+      </div>
+      <form method='POST' action='#'>
+        <div>
+          <p class="SignInText">帳號:<input type="text" class="SignIn"></p>
+          <p class="SignInText">密碼:<input type="password" class="SignIn"></p>
+          <p><a href="#"><small class="SignInSmall">忘記密碼?</small></a></p>
+          <button type="submit" class="Signbtn">登入</button>
+        </div>
+      </form>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--登入-->
+    <!--註冊-->
+    <div id="item2" class="item item--mod">
+      <div>
+        <h1>註冊</h1>
+        <hr>
+        <form method='POST' action='#'>
+          <div>
+            <p class="SignInText">帳號:&emsp;&emsp;<input type="text" class="SignIn"></p>
+            <p class="SignInText">密碼:&emsp;&emsp;<input type="password" class="SignIn"></p>
+            <p class="SignInText">確認密碼:<input type="password" class="SignIn"></p>
+            <p class="SignInText">用戶名稱:<input type="text" class="SignIn"></p>
+            <p class="SignInText">電子郵件:<input type="email" class="SignIn"></p>
+            <p class="SignInText">電話號碼:<input type="text" class="SignIn"></p>
+            <button type="submit" class="Signbtn">註冊</button>
+          </div>
+        </form>
+      </div>
+
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--註冊-->
+    <!--購物車-->
+    <div id="item3" class="item item--mod">
+      <div class="cart">
+        <h2>購物車</h2>
+        <hr>
+
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:HEMNESB</p>
+            <p class="carttext">尺寸:110/45/134</p>
+            <p class="carttext">顏色:黑棕色</p>
+          </div>
+
+          <div class="cartQuantity">
+
+            <p class="carttext">數量:
+
+            </p>
+
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:1200$</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:</p>
+            <p class="carttext">尺寸:</p>
+            <p class="carttext">顏色:</p>
+          </div>
+
+          <div class="cartQuantity">
+
+            <p class="carttext">數量:
+
+            </p>
+
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <form method='POST' action='pay.html'>
+          <p><input type="checkbox" name="all" onclick="check_all(this,'c')" />全選/全不選<button
+              class="cartbtn2">刪除</button><span class="carttotal">總金額:</span><button type="submit"
+              class="cartbtn">去買單</button>
+          </p>
+        </form>
+      </div>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--購物車-->
+  </section>
+  <section>
+    <h1>會員中心</h1>
+    <div class="warpper">
+      <input class="radio" id="one" name="group" type="radio" checked>
+      <input class="radio" id="two" name="group" type="radio">
+      <input class="radio" id="three" name="group" type="radio">
+      <div class="tabs">
+        <label class="tab" id="one-tab" for="one">個人資料</label>
+        <label class="tab" id="two-tab" for="two">修改密碼</label>
+        <label class="tab" id="three-tab" for="three">消費紀錄</label>
+      </div>
+      <div class="panels">
+        <div class="panel" id="one-panel">
+
+          <p class="membertext">帳號:&emsp;&emsp;&emsp;<span class="memberfont">aaa123</span></p>
+          <p class="membertext">名稱:&emsp;&emsp;&emsp;<span class="memberfont">鯉魚王</span></p>
+          <p class="membertext">出生年月日:<span class="memberfont">2000/01/01</span></p>
+          <p class="membertext">電話:&emsp;&emsp;&emsp;<span class="memberfont">03-4825252</span></p>
+          <p class="membertext">信箱:&emsp;&emsp;&emsp;<span class="memberfont">abcc@gmail.com</span></p>
+          <div class="memberbtndiv
+          ">
+            <p><a href="modify.html"><button type="submit" class="memberbtn">前往修改</button></a></p>
+          </div>
+        </div>
+        <div class="panel" id="two-panel">
+
+          <p class="membertext">舊密碼:&emsp;<span class="memberfont">aaa456</span></p>
+          <p class="membertext">新密碼:&emsp;<span class="memberfont"></span><input type="text" class="memberinput"></p>
+          <p class="membertext">確認密碼:<span class="memberfont"></span><input type="text" class="memberinput"></p>
+          <div class="memberbtndiv
+          ">
+            <p><button type="submit" class="memberbtn">修改</button></p>
+          </div>
+        </div>
+
+        <div class="panel" id="three-panel">
+          <div class="order-left">
+            <p>訂單編號:</p>
+            <p>訂購日期:</p>
+            <p>收件人:</p>
+          </div>
+          <div class="order-right">
+            <p>付款方式:</p>
+            <p>寄送方式:</p>
+            <p>金額:</p>
+            <div class="orderbtndiv">
+              <button class="orderbtn">取消訂單</button></div>
+          </div>
+          <hr>
+          <div class="order-left">
+            <p>訂單編號:</p>
+            <p>訂購日期:</p>
+            <p>收件人:</p>
+          </div>
+          <div class="order-right">
+            <p>付款方式:</p>
+            <p>寄送方式:</p>
+            <p>金額:</p>
+          </div>
+          <div class="orderbtndiv">
+            <button class="orderbtn">取消訂單</button></div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footleft">
+      <p>©Handy Table(HT) 翰迪各式桌具販賣</p>
+    </div>
+    <div class="footright">
+      <p>購買須知消費者保護政策</p>
+    </div>
+  </footer>
+  <!--彈出視窗-->
+  <script>
+    (function ($) {
+      $(function () {
+        $('.btn2').on('click', function () {
+          $('#item1').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn3').on('click', function () {
+          $('#item2').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn4').on('click', function () {
+          $('#item3').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+  </script>
+  <script src="../assets/JQ/jquery.popup.min.js"></script>
+  <!--彈出視窗-->
+</body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167622866-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  $(function () {
+    // This button will increment the value
+    $('.qtyplus').click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If is not undefined
+      if (!isNaN(currentVal)) {
+        // Increment
+        $('input[name=' + fieldName + ']').val(currentVal + 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If it isn't undefined or its greater than 0
+      if (!isNaN(currentVal) && currentVal > 0) {
+        // Decrement one
+        $('input[name=' + fieldName + ']').val(currentVal - 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+  });
+
+
+  function check_all(obj, cName) {
+    var checkboxs = document.getElementsByName(cName);
+    for (var i = 0; i < checkboxs.length; i++) {
+      checkboxs[i].checked = obj.checked;
+    }
+  }
+</script>
+
+
+</html>

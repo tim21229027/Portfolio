@@ -1,0 +1,52 @@
+.secend_mean {
+  width: 120px;
+  height: 100%;
+  border: 5px solid #170600;
+  position: fixed;
+  left: 120px;
+  z-index: 2;
+
+}
+
+.class_title {
+  text-align: center;
+  margin-top: 25px;
+  border: 3px solid #170600;
+  border-radius: 10px;
+  margin-left: 16px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.outline {
+  background-color: #F9F9F9;
+  border: 0px;
+
+  position: relative;
+  height: 40px;
+  font-size: 12px;
+  color: #170600;
+
+}
+
+.check_outline {
+
+  background-color: #170600;
+  border: 0px;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  font-size: 12px;
+  color: #F9F9F9;
+  border-radius: 3px;
+}
+
+.secend_list_text {
+  font-weight: bold;
+}
+
+.Management {
+  padding-left: 130px;
+}

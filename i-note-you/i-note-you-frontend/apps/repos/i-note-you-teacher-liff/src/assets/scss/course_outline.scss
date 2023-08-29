@@ -1,0 +1,111 @@
+.course_outline {
+  margin-left: 20px;
+}
+
+.course_outline_info {
+  margin-top: 35px !important;
+}
+
+.teacher_info {
+  border: 5px solid #170600;
+  border-radius: 20px;
+
+  background-color: #170600;
+  color: white;
+  padding: 15px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+
+.teacher_info_inputs {
+  display: flex;
+  text-align: center;
+}
+
+.teacher_info_input {
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
+.course_info {
+  margin-left: 20px;
+  border: 5px solid #170600;
+  border-radius: 20px;
+  padding: 15px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.course_outline_info_list {
+  border: 5px solid #170600;
+  padding: 15px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+.creatOutline_btn {
+  float: right;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  margin-right: 2%;
+
+}
+
+.creat_button {
+  height: 35px;
+
+}
+
+.Outline_titleList {
+  margin-top: 10px;
+  background-color: #000;
+  width: 97%;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.Outline_titlelist_text {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+
+  width: 20%;
+}
+
+.Outline_List {
+  margin-top: 30px;
+  background-color: #fff;
+  width: 97%;
+  display: flex;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 3px 3px gray;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.Outline_list_text {
+  display: inline-block;
+  color: #170600;
+  font-size: 18px;
+  padding: 10px;
+  width: 20%;
+}
+
+.Outline_scrollbar {
+  height: 450px;
+}
+
+.creatOutlineOK_btn {
+
+  border-radius: 5px;
+  padding: 20px 40px 20px 40px;
+  font-size: 18px;
+}

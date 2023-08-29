@@ -1,0 +1,213 @@
+/* Tab版面 */
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+body {
+  background: #CDDC39;
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  color: #000;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-weight: 900;
+
+}
+
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+
+  cursor: pointer;
+  padding: 15px 30px;
+  margin: 0px 2px;
+  background: #DEB887;
+  display: inline-block;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  font-size: 30px;
+  font-weight: 900;
+
+}
+
+.panels {
+  background: #fffffff6;
+  box-shadow: 0 2rem 2rem #DEB887;
+  min-height: 200px;
+  width: 100%;
+  max-width: 1600px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.panel {
+  display: none;
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold
+}
+
+.radio {
+  display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel,
+#four:checked~.panels #four-panel {
+  display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab,
+#four:checked~.tabs #four-tab {
+  background: #fffffff6;
+  color: #000;
+  border-top: 3px solid #000;
+}
+
+.membertext {
+  font-size: 25px;
+  padding-left: 15%;
+  padding-top: 30px;
+}
+
+.memberbtndiv {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.memberbtn {
+  text-align: center;
+  background-color: #DEB887;
+  border-radius: 10px;
+  border: white solid 1px;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.memberbtn:active {
+  position: relative;
+  top: 3px;
+}
+
+.memberfont {
+  padding-left: 10%;
+}
+
+.memberinput {
+
+  width: 260px;
+}
+
+/* Tab版面 */
+.order-left {
+  height: 180px;
+  width: 50%;
+  float: left;
+}
+
+.orderbtn {
+  text-align: center;
+  background-color: #DEB887;
+  border-radius: 10px;
+  border: white solid 1px;
+
+  font-size: 20px;
+}
+
+.orderbtndiv {
+  text-align: right;
+
+}
+
+.orderbtn:active {
+  position: relative;
+  top: 3px;
+}
+
+.checkboxdiv {
+
+  float: left;
+  width: 6%;
+}
+
+.gooddiv {
+  width: 90%;
+}
+
+.backgood {
+  float: left;
+  width: 30%;
+
+}
+
+
+.backborder {
+  position: relative;
+  height: 100px;
+}
+
+#backcheck {
+  position: relative;
+  margin-top: 50px;
+}
+
+.backinput {
+  width: 150px;
+}
+
+.backbtn {
+  text-align: center;
+  background-color: #DEB887;
+  border-radius: 10px;
+  border: white solid 1px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.backbtn:active {
+  position: relative;
+  top: 3px;
+}
+
+.addbtn {
+  text-align: center;
+  background-color: #DEB887;
+  border-radius: 10px;
+  border: white solid 1px;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  float: right;
+
+}
+
+.addbtn:active {
+  position: relative;
+  top: 3px;
+}

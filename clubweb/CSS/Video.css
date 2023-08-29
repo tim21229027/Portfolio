@@ -1,0 +1,184 @@
+body{
+    background-color: #F5E9CC;
+}
+header{
+    background-color: #dcaf48;
+    font-family: 'Noto Sans TC', sans-serif;
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#NavLogoImg{
+    width: 163px;
+}
+#navbarSupportedContent{
+    font-size: 25px;
+}
+#headerPadding{
+    padding: 60px;
+}
+
+#ClubDropdown{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+#CLUB_NAME{
+    color: gray;
+}
+#CLUB_NAME:hover{
+    color: black;
+}
+#navInnerText{
+    padding-bottom: 10px;
+    border-bottom:  4px solid transparent;
+    transition: 1s ease;
+    transform: translateX(0%);
+}
+#navInnerText:hover{
+    border-bottom:  4px solid ;
+    transition: 1s ease;
+    transform: translateX(50%);
+}
+#intro{
+    padding-top: 15%;
+}
+#VideoIntro{
+    margin-left: -10%;
+    padding-bottom: 10%;
+}
+#VideoTitle{
+    margin-left: -4%;
+}
+#VideoIntroIframe{
+    border: 10px dashed #dcaf48;
+    padding: 15px;
+    border-radius: 5%;
+}
+#VIdeoTidbitIframe{
+    border: 10px dashed cornflowerblue;
+    padding: 15px;
+    border-radius: 60px;
+}
+#VideoTitleText{
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 5px solid;
+    width: 14%;
+}
+#VideoIntroLeft{
+    font-size: 25px;
+    width: 80%;
+    padding-top: 15%;
+}
+#VideoIntroText{
+    border: 10px dashed;
+    padding: 35px;
+    border-color: #79642b;
+    border-radius: 15%;
+}
+#VideoIntroRight{
+    padding-top: 30px;
+}
+#VideoTidbit{
+    margin-left: -10%;
+}
+#VideoAuthorTitle{
+    padding-bottom: 5%;
+}
+#VideoAuthor{
+    margin-left: -10%;
+    padding-bottom: 5%;
+}
+#AuthorCardTitle{
+    text-align: center;
+    padding: 0px 50px 70px 50px;
+}
+#AuthorCardTitleText{
+    border: 10px dashed gray;
+    padding: 20px;
+    border-radius: 50px;
+}
+#authorCardTop{
+    text-align: center;
+}
+#authorCardTop h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+#VideoTidbitVideos{
+    padding: 10% 0% 20% 20%;
+}
+#AuthorCard img{
+    width: 180%;
+    margin-left: -50%;
+    margin-right: 5%;
+}
+#footerSection{
+    margin-bottom: 20%;
+}
+
+#FooterDetailRow{
+    padding: 5.5% 4% 0% 16%;
+  
+}
+#SectionLeft{
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 19px; 
+    background-color: #F5E9CC;
+    border-radius: 30%;
+    font-size: 30px;
+}
+#SectionLeft, #SectionRight{
+    display: inline-block;
+}
+#FooterLocationIcon{
+    font-size: 40px;
+    margin-left: 4px;
+}
+#footerLocation:hover{
+    color:#634f27;
+}
+#FooterIcon{
+    font-size: 40px;
+}
+#SectionRight{
+    margin-left: 20px;
+    font-size: 28px;
+}
+#footerSectionTagA{
+    color: #79642b;
+    text-decoration: none;
+}
+footer{
+    background-color: #dcaf48;
+    color: #79642b;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#SchoolLogo{
+    margin-left: -15px;
+    font-size: 29px;
+    font-weight: bold;
+}
+#DepartmentLogo{
+    margin-left: -13px;
+    font-size: 29px;
+    font-weight: bold;
+}
+footer .container{
+    padding: 5%;
+}
+
+
+#CopyRightSeciotn{
+    border-top: 5px solid;
+    padding: 3%;
+    font-size: 20px;
+    
+}
+#copyRightText{
+    font-weight: bold;
+}

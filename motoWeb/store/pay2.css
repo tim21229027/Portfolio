@@ -1,0 +1,380 @@
+.content {
+  width: 1100px;
+  height: 900px;
+  background-color: lightgray;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+.img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.payimg {
+  width: 400px;
+  border-radius: 1rem;
+  height: 300px;
+
+
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstin {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+}
+
+.paytxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1:hover {
+  color: purple;
+  transform: scale(1.1);
+}
+
+.payway {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.paytxt div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2 {
+  padding-right: 1rem;
+}
+
+input[type="text"] {
+  height: 25px;
+  font-size: 15px;
+}
+
+input[type="date"] {
+  height: 25px;
+  font-size: 15px;
+}
+
+/*隱藏區塊用*/
+.box {
+  display: none;
+}
+
+/*秀出區塊用*/
+.bS01 {
+  display: block;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.bS02 {
+  display: block;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.bS03 {
+  display: block;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive
+}
+
+/*區塊範圍指定*/
+.bBW {
+  display: block;
+}
+
+.paybtn {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 1rem;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 3rem;
+  width: 250px;
+  background-color: orange;
+  border-radius: 2rem;
+  animation-name: gogo;
+  animation-duration: 3s;
+}
+
+@keyframes gogo {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 3%;
+  }
+}
+
+header {
+  background-color: brown;
+}
+
+.body {
+  height: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  padding-left: 5rem;
+}
+
+.people {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+p:hover {
+  transform: scale(1.3);
+
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+ul,
+li {
+  list-style: none;
+  color: wheat;
+}
+
+ul.dropdown {
+  display: inline-block;
+}
+
+ul.dropdown>li:last-child {
+  border-right: none;
+}
+
+
+ul.dropdown a {
+  background-color: white;
+  color: #333;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
+
+
+}
+
+ul.dropdown a:hover {
+  /* 滑鼠滑入按鈕變色*/
+  background-color: darkgray;
+  color: white;
+}
+
+ul.dropdown li:hover>a {
+  /* 滑鼠移入次選單上層按鈕保持變色*/
+  background-color: darkgray;
+  color: white;
+}
+
+ul.dropdown li {
+  /*隱藏次選單*/
+  display: none;
+
+}
+
+ul:hover>li {
+  /* 滑鼠滑入展開次選單*/
+  display: block;
+
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+}
+
+.foot {
+  text-align: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.box1 {
+  margin: 50px auto;
+  width: 300px;
+  height: 100px;
+}
+
+.seen {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.seen input#search {
+  width: 300px;
+  height: 100px;
+  background: brown;
+  border: none;
+  font-size: 30px;
+  float: left;
+  color: black;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+
+  -webkit-transition:
+    width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+.seen input#search::-webkit-input-placeholder {
+  color: white;
+}
+
+.seen input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+.seen input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+.seen input#search:-ms-input-placeholder {
+  color: white;
+}
+
+.seen .icon {
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 40px;
+  z-index: 1;
+  color: white;
+}
+
+.seen input#search:hover,
+.seen input#search:focus,
+.seen input#search:active {
+  outline: none;
+  background: #ffffff;
+}
+
+.seen input#search:focus,
+.seen input#search:active {
+  outline: none;
+  width: 500px;
+}
+
+.seen :hover input#search {
+  width: 500px;
+}
+
+.seen:hover .icon {
+  color: #93a2ad;
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.5);
+  /* Firefox */
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -o-transform: scale(1.5);
+  /* Opera */
+  transform: scale(1.5);
+}
+
+h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.credit {
+  width: 80px;
+}
+
+.day {
+  width: 50px;
+  margin-right: 0.5rem;
+}

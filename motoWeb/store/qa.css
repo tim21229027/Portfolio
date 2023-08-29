@@ -1,0 +1,182 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: appear;
+  animation-duration: 5s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: 'Bebas Neue', cursive;
+
+}
+.title {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5rem;
+  width: 300px;
+  background-color: orange;
+  border-radius: 2rem;
+  animation-name: gogo;
+  animation-duration: 3s;
+}
+
+@keyframes gogo {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 3%;
+  }
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: #B2C9AB;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.eee {
+  width: 800px;
+  height: 500px;
+  background-color: #B2C9AB;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 8px lightslategray;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 微軟正黑體;
+  padding-left: 1rem;
+}
+
+.eme {
+  width: 500px;
+  height: 25px;
+  border-radius: 1rem;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comment1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comm {
+  width: 600px;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+.commentbutton {
+  padding-bottom: 3rem;
+
+}
+
+.cancel,
+.combtn {
+  width: 90px;
+  height: 50px;
+  border: none;
+}
+
+.cancel {
+  opacity: 0.5;
+}
+
+.cancel:hover {
+  opacity: 1;
+}
+
+.jjj {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  background-color: rgba(253, 134, 22, 0.7);
+  cursor: pointer;
+  padding: 18px;
+  width: 1000px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  color: white;
+  font-weight: bold;
+  font-family: "Moontime";
+  font-size: 35px;
+  text-align: center;
+}
+
+.ee {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ee>h2 {
+  text-align: center;
+}
+
+.active,
+.accordion:hover {
+  background-color: yellowgreen;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 950px;
+}
+
+.img {
+  position: absolute;
+  z-index: -9;
+  opacity: 0.5;
+  width: 100%;
+  height: 150%;
+}

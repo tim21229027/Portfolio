@@ -1,0 +1,433 @@
+body{
+    background-color: #F5E9CC;
+}
+header{
+    background-color: #dcaf48;
+    font-family: 'Noto Sans TC', sans-serif;
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header .container{
+    margin: 0% 19.87%;
+}
+#NavLogoImg{
+    width: 163px;
+}
+#navbarSupportedContent{
+    font-size: 25px;
+}
+#headerPadding{
+    padding: 60px;
+}
+
+#ClubDropdown{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+#CLUB_NAME{
+    color: gray;
+}
+#CLUB_NAME:hover{
+    color: black;
+}
+#navInnerText{
+    padding-bottom: 10px;
+    border-bottom:  4px solid transparent;
+    transition: 1s ease;
+    transform: translateX(0%);
+}
+#navInnerText:hover{
+    border-bottom:  4px solid ;
+    transition: 1s ease;
+    transform: translateX(50%);
+}
+
+/*CLUB CSS開始*/
+#intro{
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+#IntroTitleText {
+    padding: 10px;
+    font-size: 30pt;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+#clubTable{
+    padding-left: 50px;
+}
+#clubTableTitleText{
+    font-size: 20pt;
+    font-weight: bold;
+}
+#Clubborder {
+    position: relative;
+    background-color: white;
+    border: 3px solid black;
+    height: 1800px;
+    box-shadow: 8px 5px 5px gray;
+
+}
+
+#Clubname {
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    font-size: 60pt;
+    font-weight: 800;
+    background-image: url(../Picture/clubPicture/line.png);
+    background-position: -26px 67px;
+}
+
+#String {
+    position: absolute;
+    left: 55%;
+    top: 80px;
+    border: 10px double black;
+    border-radius: 10px;
+    box-shadow: 20px 20px 3px gray;
+}
+
+#ClubHR {
+
+    border: 3px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#Clubsummary {
+    padding-left: 50PX;
+    font-size: 30pt;
+}
+#ClubsummaryInner{
+    padding: 70px;
+}
+#StringPNG {
+    border: 10px double black;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10%;
+}
+#StringLeft{
+    width: 50%;
+    float: left;
+}
+#StringRight{
+    width: 50%;
+    float: right;
+}
+#StringSociety {
+    width: 100%;
+    font-size: 25px;
+    padding: 20px 0px 20px 30px;
+}
+#clubActivityFirst{
+    padding-top: 5%;
+}
+#clubActivityLeft{
+    width: 50%;
+    float: left;
+    padding: 5%;
+}
+#Stringfairtext{
+    width: 100%;
+    font-size: 20pt;
+}
+#clubActivityRight{
+    width: 50%;
+    float: right;
+    padding-right: 7%;
+}
+#StringFair{
+    width: 100%;
+    border: 10px double black;
+    border-radius: 10px;
+}
+
+#Stringactivity{
+    
+    right: 150px;
+    top: 40px;
+} 
+#clubActivitySecond{
+    padding-top: 45%;
+}
+#clubActivityLeft2{
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+}
+#Stringshow {
+    width: 100%;
+    border: 10px double black;
+    border-radius: 10px;
+}
+#clubActivityRight2{
+    float: right;
+    width: 50%;
+}
+#Stringashowtext {
+    width: 100%;
+    font-size: 20pt;
+    padding: 5% 10% 10% 10%;
+}
+
+#Stringactivity2 {
+    padding-left: 100px;
+}
+
+
+#ig {
+    font-size: 50pt;
+    font-weight: 900;
+}
+
+#igphoto {
+    width: 50%;
+    left: 500px;
+}
+
+#fb {
+    width: 50%;
+    font-size: 50pt;
+    font-weight: 900;
+}
+
+#fbphoto {
+    width: 50%;
+    left: 1000px;
+}
+#Second{
+    padding-bottom: 10%;
+}
+#Third{
+    padding-bottom: 10%;
+}
+/*CLUB1 CSS結束*/
+/*信封特效*/   
+        #envelopModalContent{
+            width: 200%;
+            margin: 0% -50%;
+            background-color: transparent;
+        }
+        #envelopModalCloseBtn{
+            float: right;
+            background-color: gray;
+            font-size: 300%;
+        }
+        /* 滾動條隐藏 */
+        ::-webkit-scrollbar {
+            display: none;
+          }
+          /* 禁用圖片點擊,butterfly渲染後會給圖片套上fancybox，點開後會造成信封偏移*/
+          .formmain{
+             pointer-events: none !important;
+          }
+          /* top-img隐藏 */
+          #page-header {
+            background: transparent !important;
+          }
+          /* 寬度小于530px隐藏信封 */
+          @media screen and (max-width: 530px) {
+            #computer {
+              display: none !important;
+            }
+          }
+          
+          @media screen and (min-width: 530px) {
+            #mobile {
+              display: none !important;
+            }
+          }
+          
+          #article-container img {
+            margin: 0 auto 0rem;
+          }
+          
+          #form-wrap {
+            overflow: hidden;
+            height: 588px;
+            position: relative;
+            top: 0px;
+            transition: all 1s ease-in-out .3s;
+            z-index: 0;
+            cursor: pointer;
+          }
+          /* 調整信封划出高度，换信封内容可在此設置height */
+          #form-wrap:hover {
+            height: 850px;
+            top: -200px;
+          }
+          
+          #beforeimg {
+            position: absolute;
+            bottom: 254px;
+            left: -21px;
+            background-repeat: no-repeat;
+            width: 575px;
+            height: 317px;
+            z-index: -100;
+            pointer-events: none;
+          }
+          
+          #afterimg {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-repeat: no-repeat;
+            width: 530px;
+            height: 259px;
+            z-index: 100;
+            pointer-events: none;
+          }
+          
+          #envelope {
+            position: relative;
+            overflow: visible;
+            width: 500px;
+            margin: 0px auto;
+            transition: all 1s ease-in-out .3s;
+            padding-top: 200px;
+          }
+          
+          #maincontent {
+            width: 530px;
+            margin: 20px auto 0;
+          }
+          
+          .headerimg {
+            width: 100%;
+            overflow: hidden;
+            pointer-events: none;
+          }
+          
+          .formmain {
+            background: white;
+            width: 95%;
+            max-width: 800px;
+            margin: auto auto;
+            border-radius: 5px;
+            border: 1px solid;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
+          }
+          
+          .title3 {
+            text-decoration: none;
+            color: rgb(246, 214, 175);
+          }
+          
+          .comments {
+            border-bottom: #ddd 1px solid;
+            border-left: #ddd 1px solid;
+            padding-bottom: 20px;
+            background-color: #eee;
+            margin: 15px 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-top: #ddd 1px solid;
+            border-right: #ddd 1px solid;
+            padding-top: 20px;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+          }
+          
+          .bottomcontent {
+            text-align: center;
+            margin-top: 40px;
+          }
+          
+          .bottomimg {
+            width: 100%;
+            margin: 5px auto 5px auto;
+            display: block;
+            pointer-events: none;
+          }
+          
+          .bottomhr {
+            font-size: 12px;
+            text-align: center;
+            color: #999;
+          }
+          /* 夜間模式 */
+          [data-theme='dark']
+            .formmain {
+              background: rgb(50, 50, 50);
+            }
+          [data-theme='dark']
+            .comments {
+              background: rgba(90, 90, 90, 0.8)
+            }
+/*信封特效*/       
+
+#footerSection{
+    margin-bottom: 20%;
+}
+
+#FooterDetailRow{
+    padding: 5.5% 4% 0% 16%;
+  
+}
+#SectionLeft{
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 19px; 
+    background-color: #F5E9CC;
+    border-radius: 30%;
+    font-size: 30px;
+}
+#SectionLeft, #SectionRight{
+    display: inline-block;
+}
+#FooterLocationIcon{
+    font-size: 40px;
+    margin-left: 4px;
+}
+#footerLocation:hover{
+    color:#634f27;
+}
+#FooterIcon{
+    font-size: 40px;
+}
+#SectionRight{
+    margin-left: 20px;
+    font-size: 28px;
+}
+#footerSectionTagA{
+    color: #79642b;
+    text-decoration: none;
+}
+footer{
+    background-color: #dcaf48;
+    color: #79642b;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#SchoolLogo{
+    margin-left: -15px;
+    font-size: 29px;
+    font-weight: bold;
+}
+#DepartmentLogo{
+    margin-left: -13px;
+    font-size: 29px;
+    font-weight: bold;
+}
+footer .container{
+    padding: 5%;
+}
+
+
+#CopyRightSeciotn{
+    border-top: 5px solid;
+    padding: 3%;
+    font-size: 20px;
+    
+}
+#copyRightText{
+    font-weight: bold;
+}

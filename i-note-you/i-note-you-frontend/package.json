@@ -1,0 +1,16 @@
+{
+  "name": "i-note-you-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/repos/*"
+  ],
+  "scripts": {
+    "cli": "pnpm -F @jd/cli start"
+  },
+  "author": "Lu-Yun-Cheng",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.186"
+  }
+}

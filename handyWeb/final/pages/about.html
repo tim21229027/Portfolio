@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="../assets/img/logo-1.png" type="image/x-icon">
+  <title>翰迪Handy Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/edition.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <title>Document</title>
+  <!--匯入Boostrap CSS(舊版)-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--匯入JQuery File(舊版)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <!--字體-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+  <!--彈出視窗-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <style type="text/css">
+    .item {
+      max-width: 85%;
+      padding: 1em;
+      background: #eee;
+      display: none;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    .item-close {
+      cursor: pointer;
+      right: 5px;
+      top: 5px;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 18px;
+      height: 26px;
+      line-height: 22px;
+      text-align: center;
+      width: 26px;
+    }
+
+    .container {
+      margin: 20px auto;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <!--彈出視窗-->
+</head>
+
+
+<body style="background-color: #FFF5EE;">
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="header-left">
+          <a class="nav-link" href="index.html">
+            <img src="../assets/img/logo.png" class="logo">
+          </a>
+
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="headerPadding" data-toggle="dropdown">
+              <strong class="headertext">商品資訊</strong>
+            </a>
+            <div class="dropdown-menu" id="StoreDropdown">
+              <a class="dropdown-item" href="dressing.html" id="StoreName"><strong>化妝台</strong></a>
+              <a class=" dropdown-item" href="bar.html" id="StoreName"><strong>吧檯桌</strong></a>
+              <a class="dropdown-item" href="bed.html" id="StoreName"><strong>床邊桌</strong></a>
+              <a class="dropdown-item" href="office.html" id="StoreName"><strong>辦公桌</strong></a>
+              <a class="dropdown-item" href="dining.html" id="StoreName"><strong>餐桌</strong></a>
+              <a class="dropdown-item" href="side.html" id="StoreName"><strong>邊桌</strong></a>
+            </div>
+          </li>
+          <li class="headerlist">
+            <a class="nav-link" href="member.html" id="headerPadding">
+              <p class="headertext"> 會員中心 </p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="about.html" id="headerPadding">
+              <p class="headertext">關於我們</p>
+            </a>
+          </li>
+
+          <li class="headerlist">
+            <a class="nav-link" href="QA.html" id="headerPadding">
+              <p class="headertext">Q&A</p>
+            </a>
+          </li>
+
+        </ul>
+        <div class="header-right">
+
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn2" href="#" id="headerlist2">登入</a>
+          </div>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn3" href="#" id="headerlist2">註冊</a>
+          </div>
+          <input type="search" class="search" placeholder="🔍Search" required>
+          <div class="container">
+            <div class="jquery-script-ads"></div>
+            <a class="btn4" href="#"> <img src="../assets/img/cart.png" class="cartphoto"></a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section>
+    <!--登入-->
+    <div id="item1" class="item item--mod">
+      <div>
+        <h1>登入</h1>
+        <hr>
+      </div>
+      <form method='POST' action='#'>
+        <div>
+          <p class="SignInText">帳號:<input type="text" class="SignIn"></p>
+          <p class="SignInText">密碼:<input type="password" class="SignIn"></p>
+          <p><a href="#"><small class="SignInSmall">忘記密碼?</small></a></p>
+          <button type="submit" class="Signbtn">登入</button>
+        </div>
+      </form>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--登入-->
+    <!--註冊-->
+    <div id="item2" class="item item--mod">
+      <div>
+        <h1>註冊</h1>
+        <hr>
+        <form method='POST' action='#'>
+          <div>
+            <p class="SignInText">帳號:&emsp;&emsp;<input type="text" class="SignIn"></p>
+            <p class="SignInText">密碼:&emsp;&emsp;<input type="password" class="SignIn"></p>
+            <p class="SignInText">確認密碼:<input type="password" class="SignIn"></p>
+            <p class="SignInText">用戶名稱:<input type="text" class="SignIn"></p>
+            <p class="SignInText">電子郵件:<input type="email" class="SignIn"></p>
+            <p class="SignInText">電話號碼:<input type="text" class="SignIn"></p>
+            <button type="submit" class="Signbtn">註冊</button>
+          </div>
+        </form>
+      </div>
+
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--註冊-->
+    <!--購物車-->
+    <div id="item3" class="item item--mod">
+      <div class="cart">
+        <h2>購物車</h2>
+        <hr>
+
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:HEMNESB</p>
+            <p class="carttext">尺寸:110/45/134</p>
+            <p class="carttext">顏色:黑棕色</p>
+          </div>
+
+          <div class="cartQuantity">
+
+            <p class="carttext">數量:
+
+            </p>
+
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:1200$</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="cartborder">
+          <div class="checkdiv">
+            <input type="checkbox" id="cartcheck" name="c">
+          </div>
+          <div class="imgdiv">
+            <img src="../assets/img/HEMNESB.jpg" class="cartimg">
+          </div>
+          <div class="cartgoods">
+            <p class="carttext">商品名稱:</p>
+            <p class="carttext">尺寸:</p>
+            <p class="carttext">顏色:</p>
+          </div>
+
+          <div class="cartQuantity">
+
+            <p class="carttext">數量:
+
+            </p>
+
+          </div>
+          <div class="cartprice">
+            <p class="carttext">價格:</p>
+
+          </div>
+
+        </div>
+        <hr>
+        <form method='POST' action='pay.html'>
+          <p><input type="checkbox" name="all" onclick="check_all(this,'c')" />全選/全不選<button
+              class="cartbtn2">刪除</button><span class="carttotal">總金額:</span><button type="submit"
+              class="cartbtn">去買單</button>
+          </p>
+        </form>
+      </div>
+      <b class="item-close js-popup-close">x</b>
+    </div>
+    <!--購物車-->
+  </section>
+  <section>
+    <p class="title">About us</p>
+    <div class="abouttextdiv">
+      我們主題是「桌子」，桌子是我們生活中不可缺少的一項產品，尤其是像我們這種在外面租房子的大學生，能擁有個適合的桌子使用、擺設在家中，是非常重要的，我們販賣的桌子從吃飯的餐桌，到放在床邊的小桌子、甚至適合化妝的桌子都應有盡有，而我們的名稱為翰迪，是取英文的諧音Handy，我們的桌子，是一個在你的家中，一個非常便利的擺設，簡單不失格調，使用性極高的便利桌子。
+    </div>
+    <hr>
+    <div class="presonaldiv">
+      <div class="presonal">
+        <div class="flip"><span class="1"><img src="../assets/img/yzj.jpg" class="personalphoto"></span>楊子瑨</div>
+
+        <div class="panel">
+          這次的期末專案也跟上學期一樣是分組進行，但不同的是，這次是換我們乙班做前端的部分，我覺得跟後端比起來，前端需要更多的細心跟美感來去實現排版與配色、設計等方面，是個完全不同的挑戰，我也在這次的專案中學到很多團隊合作的事，感謝隊友的配合讓製作網頁進行得更順利。
+        </div>
+        <a href="https://www.instagram.com/y_zijin/" target="blank"><img src="../assets/img/ig.png" class="ig"></a>
+      </div>
+      <div class="presonal">
+        <div class="flip2"><span class="1"><img src="../assets/img/black.jpg" class="personalphoto"></span>曾竑竣</div>
+        <div class="panel2">
+          經過這次多媒體的期末專案，發覺跟上學期的網程專案差別很大，雖然都是合作專案，但上學期網程的大部分都是在寫程式與邏輯上的東西，而這學期學的多媒體是在程式與美感之間交叉，才能呈現出一個好看的網頁。也在這次的期末專案中，我發現了多媒體程式設計的有趣之處。
+        </div>
+        <a href="https://www.instagram.com/black_t1230/" target="blank"><img src="../assets/img/ig.png" class="ig"></a>
+      </div>
+      <div class="presonal">
+        <div class="flip3"><span class="1"><img src="../assets/img/wen.jpg" class="personalphoto"></span>邱韻玟</div>
+        <div class="panel3">
+          透過這次的期末專案，我才知道，前端和後端要整合起來是一件複雜的事情。在瀏覽購物網站的時候，看到喜歡的商品，按加入購物車，商品就會加到購物車，沒想到，這一個小小的動作，對於後端還不算熟悉的我們，就要花上很長的時間。因為遠距課，各個課程的報告都增加了許多，謝謝我的組員們都十分的給力，才能在這段非常時期內完成這次的專案。
+        </div>
+        <a href="https://www.instagram.com/wen__1126/" target="blank"><img src="../assets/img/ig.png" class="ig"></a>
+      </div>
+      <div class="presonal">
+        <div class="flip4"><span class="1"><img src="../assets/img/xin.jpg" class="personalphoto"></span>吳文心</div>
+        <div class="panel4">這學期的網程學到了很多，且因為有多媒體程式設計課程的一些基礎，學起來時也有輕鬆一點，期末專題我們也花了很多時間，我覺得很多語法真的是要多練習，當真正了解各個語法的功能後，做起來也會更快速有效率！</div>
+        <a href="https://www.instagram.com/wen_xin1116/" target="blank"><img src="../assets/img/ig.png" class="ig"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footleft">
+      <p>©Handy Table(HT) 翰迪各式桌具販賣</p>
+    </div>
+    <div class="footright">
+      <p>購買須知消費者保護政策</p>
+    </div>
+  </footer>
+  <!--領域展開-->
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      $(".flip").click(function () {
+        $(".panel").slideToggle("slow");
+        $(".xs1").toggle();
+        $(".xs2").toggle();
+      });
+    });
+    $(function () {
+      $(".flip2").click(function () {
+        $(".panel2").slideToggle("slow");
+        $(".xs1").toggle();
+        $(".xs2").toggle();
+      });
+    });
+    $(function () {
+      $(".flip3").click(function () {
+        $(".panel3").slideToggle("slow");
+        $(".xs1").toggle();
+        $(".xs2").toggle();
+      });
+    });
+    $(function () {
+      $(".flip4").click(function () {
+        $(".panel4").slideToggle("slow");
+        $(".xs1").toggle();
+        $(".xs2").toggle();
+      });
+    });
+  </script>
+  <!--領域展開-->
+  <!--彈出視窗-->
+  <script>
+    (function ($) {
+      $(function () {
+        $('.btn2').on('click', function () {
+          $('#item1').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn3').on('click', function () {
+          $('#item2').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+    (function ($) {
+      $(function () {
+        $('.btn4').on('click', function () {
+          $('#item3').popup({
+            time: 500,
+            classAnimateShow: 'slideInUp',
+            classAnimateHide: 'fadeOut',
+            onPopupClose: function e() {
+              // console.log('0')
+            },
+            onPopupInit: function e() {
+              // console.log('1')
+            }
+          });
+        });
+      });
+    })(jQuery);
+  </script>
+  <script src="../assets/JQ/jquery.popup.min.js"></script>
+  <!--彈出視窗-->
+</body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167622866-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  $(function () {
+    // This button will increment the value
+    $('.qtyplus').click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If is not undefined
+      if (!isNaN(currentVal)) {
+        // Increment
+        $('input[name=' + fieldName + ']').val(currentVal + 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      fieldName = $(this).attr('field');
+      // Get its current value
+      var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+      // If it isn't undefined or its greater than 0
+      if (!isNaN(currentVal) && currentVal > 0) {
+        // Decrement one
+        $('input[name=' + fieldName + ']').val(currentVal - 1);
+      } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+      }
+    });
+  });
+
+
+  function check_all(obj, cName) {
+    var checkboxs = document.getElementsByName(cName);
+    for (var i = 0; i < checkboxs.length; i++) {
+      checkboxs[i].checked = obj.checked;
+    }
+  }
+</script>
+
+
+</html>
